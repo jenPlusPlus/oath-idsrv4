@@ -1,0 +1,2057 @@
+2018-07-16 09:27:52.338 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-16 09:27:52.367 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-16 09:27:52.369 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-16 09:27:52.369 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-16 09:27:52.370 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-16 09:27:52.370 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-16 09:28:21.415 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-16 09:28:21.444 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-16 09:28:21.447 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-16 09:28:21.447 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-16 09:28:21.447 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-16 09:28:21.447 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-16 09:28:21.735 -06:00 [FTL] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use. ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.Internal.AddressInUseException: Error -48 EADDRINUSE address already in use ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -48 EADDRINUSE address already in use
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.GetSockIPEndPoint()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.StartAsync(String pipeName, Byte[] pipeMessage, IEndPointInformation endPointInformation, LibuvThread thread)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindLocalhostAsync(ServerAddress address, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAddressAsync(String address, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, List`1 listenOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2018-07-16 09:31:17.461 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-16 09:31:17.495 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-16 09:31:17.497 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-16 09:31:17.498 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-16 09:31:17.498 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-16 09:31:17.498 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-16 09:31:36.718 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-16 09:31:36.834 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-16 09:31:36.835 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-16 09:31:36.837 -06:00 [DBG] Start discovery request
+2018-07-16 11:25:53.219 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-16 11:25:53.219 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-16 11:25:53.219 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-16 11:25:53.219 -06:00 [DBG] Start discovery request
+2018-07-16 11:34:32.253 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-16 11:34:32.253 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-16 11:34:32.253 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-16 11:34:32.253 -06:00 [DBG] Start discovery request
+2018-07-16 12:01:56.862 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-16 12:01:56.894 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-16 12:01:56.896 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-16 12:01:56.896 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-16 12:01:56.897 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-16 12:01:56.897 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-16 12:02:02.518 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-16 12:02:02.636 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-16 12:02:02.636 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-16 12:02:02.639 -06:00 [DBG] Start discovery request
+2018-07-16 12:46:58.022 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-16 12:46:58.022 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-16 12:46:58.022 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-16 12:46:58.022 -06:00 [DBG] Start discovery request
+2018-07-16 12:47:08.813 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-16 12:47:08.844 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-16 12:47:08.846 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-16 12:47:08.846 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-16 12:47:08.847 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-16 12:47:08.847 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-16 12:47:13.216 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-16 12:47:13.334 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-16 12:47:13.334 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-16 12:47:13.337 -06:00 [DBG] Start discovery request
+2018-07-17 11:06:38.009 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 11:06:38.010 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 11:06:38.010 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 11:06:38.010 -06:00 [DBG] Start discovery request
+2018-07-17 12:44:45.923 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-17 12:44:45.953 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 12:44:45.956 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 12:44:45.956 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 12:44:45.956 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 12:44:45.956 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 12:44:46.191 -06:00 [FTL] Unable to start Kestrel.
+System.InvalidOperationException: HTTPS endpoints can only be configured using KestrelServerOptions.Listen().
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAddressAsync(String address, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, List`1 listenOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2018-07-17 12:46:02.113 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-17 12:46:02.143 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 12:46:02.146 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 12:46:02.146 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 12:46:02.146 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 12:46:02.146 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 12:47:00.450 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 12:47:00.567 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 12:47:00.568 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 12:47:00.571 -06:00 [DBG] Start discovery request
+2018-07-17 12:47:00.758 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 12:47:00.759 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 12:47:00.759 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 12:47:00.762 -06:00 [DBG] Start key discovery request
+2018-07-17 12:47:00.837 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 12:47:00.840 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 12:47:00.840 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 12:47:00.843 -06:00 [DBG] Start authorize request
+2018-07-17 12:47:00.861 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:47:00.868 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:47:00.882 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:47:00.893 -06:00 [ERR] Invalid redirect_uri: http://localhost:5000/signin-oidc
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674500208007260.Yzk3N2Y4MTUtNGI4NS00YjI3LTlmNzYtOGUzMjg1NjEwZWNiNGQ3MDFmZGUtMTQzNi00ZWNkLWFlNTMtMjk4ODhjNjcyZGFk",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcgxcq6SkXwbX7AubzjMF0-UgKgFtQ3vmpxV7xZinnZ322RJMign-7k_KJf0dBFBvuk95IiZ9L_HmP4oMwlr2Wf8HnCZKtmJ1LIKELWEW8Xm7VA2RaNbHAYX7J2ilo3TBCKwmCByxYfn6Ovk5BGMWP7za4NVgNnST7Y9KyflWzcNLFAgO2RdK-NpfpZxcY0EUCBkSeFkTv27GOp2mSpAQcMkF8omVPEGKK8-tRV6PItV-88tsh4Z7HLb6Hg4isS9p8M1gclUHGCr6dkrcQ0_wlTjrX1f7plwIQqKCDQNq4khg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:47:00.896 -06:00 [ERR] Request validation failed
+2018-07-17 12:47:00.896 -06:00 [INF] {
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "AllowedRedirectUris": [
+    "http://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674500208007260.Yzk3N2Y4MTUtNGI4NS00YjI3LTlmNzYtOGUzMjg1NjEwZWNiNGQ3MDFmZGUtMTQzNi00ZWNkLWFlNTMtMjk4ODhjNjcyZGFk",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcgxcq6SkXwbX7AubzjMF0-UgKgFtQ3vmpxV7xZinnZ322RJMign-7k_KJf0dBFBvuk95IiZ9L_HmP4oMwlr2Wf8HnCZKtmJ1LIKELWEW8Xm7VA2RaNbHAYX7J2ilo3TBCKwmCByxYfn6Ovk5BGMWP7za4NVgNnST7Y9KyflWzcNLFAgO2RdK-NpfpZxcY0EUCBkSeFkTv27GOp2mSpAQcMkF8omVPEGKK8-tRV6PItV-88tsh4Z7HLb6Hg4isS9p8M1gclUHGCr6dkrcQ0_wlTjrX1f7plwIQqKCDQNq4khg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:47:00.920 -06:00 [INF] {
+  "Name": "Token Issued Failure",
+  "Category": "Token",
+  "EventType": "Failure",
+  "Id": 2001,
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "Endpoint": "Authorize",
+  "Scopes": "",
+  "Error": "unauthorized_client",
+  "ErrorDescription": "Invalid redirect_uri",
+  "ActivityId": "0HLFC2MN1RSSU:00000001",
+  "TimeStamp": "2018-07-17T18:47:00Z",
+  "ProcessId": 6101,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 12:48:32.699 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-17 12:48:32.730 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 12:48:32.733 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 12:48:32.733 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 12:48:32.733 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 12:48:32.733 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 12:48:54.232 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 12:48:54.348 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 12:48:54.349 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 12:48:54.351 -06:00 [DBG] Start discovery request
+2018-07-17 12:48:54.476 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 12:48:54.477 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 12:48:54.477 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 12:48:54.479 -06:00 [DBG] Start key discovery request
+2018-07-17 12:48:54.527 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 12:48:54.529 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 12:48:54.529 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 12:48:54.532 -06:00 [DBG] Start authorize request
+2018-07-17 12:48:54.543 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:48:54.547 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:48:54.557 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:48:54.567 -06:00 [ERR] Invalid redirect_uri: http://localhost:5000/signin-oidc
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674501345054660.MTk1MjhiMDgtNGFlMi00ZTdiLTk4NTgtYWQyMWI4NTY2YTJlNDJhZThjYmQtZWI2NC00ZTRjLWE0M2YtMjEzMjhlMWIzZGUz",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHe7xXrUChM-CIIH4PR7UXwQ-tdiFviY3r_u7ouGWlA_cNk0GGnq3F8vIPEkkaRK4osN5f6cz4zakij8xzFrpld0JCclDzCYrTO0K0q8Hbd8K2tbdNLBLVVvNjUpTyPd5BkHSKmm0CEIbh2uXvwcRxqy-G45j6iJscjdAfVA44FMTyaezd1HtL4jb5vQQksthacJg1oQv7KBIt2XCokf9BFngDI_cMHdcy8r6qqSWIgSEIovd5aTtp60fW51WC4heqdlW9c72wEiKMDlt1CL6uabczCstl-TrARDOf1q9JGSZQ",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:48:54.569 -06:00 [ERR] Request validation failed
+2018-07-17 12:48:54.570 -06:00 [INF] {
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "RequestedScopes": "",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674501345054660.MTk1MjhiMDgtNGFlMi00ZTdiLTk4NTgtYWQyMWI4NTY2YTJlNDJhZThjYmQtZWI2NC00ZTRjLWE0M2YtMjEzMjhlMWIzZGUz",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHe7xXrUChM-CIIH4PR7UXwQ-tdiFviY3r_u7ouGWlA_cNk0GGnq3F8vIPEkkaRK4osN5f6cz4zakij8xzFrpld0JCclDzCYrTO0K0q8Hbd8K2tbdNLBLVVvNjUpTyPd5BkHSKmm0CEIbh2uXvwcRxqy-G45j6iJscjdAfVA44FMTyaezd1HtL4jb5vQQksthacJg1oQv7KBIt2XCokf9BFngDI_cMHdcy8r6qqSWIgSEIovd5aTtp60fW51WC4heqdlW9c72wEiKMDlt1CL6uabczCstl-TrARDOf1q9JGSZQ",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:48:54.592 -06:00 [INF] {
+  "Name": "Token Issued Failure",
+  "Category": "Token",
+  "EventType": "Failure",
+  "Id": 2001,
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "Endpoint": "Authorize",
+  "Scopes": "",
+  "Error": "unauthorized_client",
+  "ErrorDescription": "Invalid redirect_uri",
+  "ActivityId": "0HLFC2NMCE6E1:00000002",
+  "TimeStamp": "2018-07-17T18:48:54Z",
+  "ProcessId": 6303,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 12:50:52.444 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-17 12:50:52.474 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 12:50:52.476 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 12:50:52.476 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 12:50:52.476 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 12:50:52.477 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 12:51:11.210 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 12:51:11.323 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 12:51:11.323 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 12:51:11.325 -06:00 [DBG] Start discovery request
+2018-07-17 12:51:11.495 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 12:51:11.496 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 12:51:11.496 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 12:51:11.499 -06:00 [DBG] Start key discovery request
+2018-07-17 12:51:11.566 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 12:51:11.569 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 12:51:11.569 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 12:51:11.572 -06:00 [DBG] Start authorize request
+2018-07-17 12:51:11.586 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:51:11.590 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:51:11.600 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:51:11.604 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:51:11.605 -06:00 [DBG] No PKCE used.
+2018-07-17 12:51:11.629 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:51:11.638 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHejXbXRPbq8yrhkb0U-7P7MmRgWV2X6h4PcYxwvT99Isz46gWLRZiyXyQfCbf5GC42V1ck6fww1L7ccv1PDDCrBMhVKTxAfRJHZw7g5Ar4GQusMowD9geSY58hkbKAMJ7DLDHivQz-rdnzzpK-YSVkbDkSlCEBr3Ydl97kq1j3vk7RIcnAg-jr_UIN6MKowr6d-kpD5p1YOpzLBS2EYtAL0FpmhIx_z1UrzkG7eHrApQ5PfmkpHXFsQHryhX2uraXIaFgUDFEv5YgzIBT8G0mfnvR_8CAuKWi_INSp-23NhHQ",
+  "Nonce": "636674502715317110.YWEwOGNiZjItODc0OC00Y2I0LWI1NWYtYWY5ODY0OWRkMTUyNTMyY2VhMTctNDUwOC00NjllLWFjNDAtOWUxYzhiNmFlODA1",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674502715317110.YWEwOGNiZjItODc0OC00Y2I0LWI1NWYtYWY5ODY0OWRkMTUyNTMyY2VhMTctNDUwOC00NjllLWFjNDAtOWUxYzhiNmFlODA1",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHejXbXRPbq8yrhkb0U-7P7MmRgWV2X6h4PcYxwvT99Isz46gWLRZiyXyQfCbf5GC42V1ck6fww1L7ccv1PDDCrBMhVKTxAfRJHZw7g5Ar4GQusMowD9geSY58hkbKAMJ7DLDHivQz-rdnzzpK-YSVkbDkSlCEBr3Ydl97kq1j3vk7RIcnAg-jr_UIN6MKowr6d-kpD5p1YOpzLBS2EYtAL0FpmhIx_z1UrzkG7eHrApQ5PfmkpHXFsQHryhX2uraXIaFgUDFEv5YgzIBT8G0mfnvR_8CAuKWi_INSp-23NhHQ",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:51:11.644 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 12:51:11.932 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:51:11.933 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:51:11.933 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:51:11.933 -06:00 [DBG] No PKCE used.
+2018-07-17 12:51:11.934 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:51:11.936 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:51:15.813 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:51:15.813 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:51:15.813 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:51:15.813 -06:00 [DBG] No PKCE used.
+2018-07-17 12:51:15.814 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:51:15.814 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:51:33.771 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 12:51:34.937 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 12:51:34.938 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 12:51:34.938 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 12:51:34.939 -06:00 [DBG] Adding auth_time claim with value: 1531853494
+2018-07-17 12:51:34.967 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 12:51:34.993 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC2P1NNKJE:00000002",
+  "TimeStamp": "2018-07-17T18:51:34Z",
+  "ProcessId": 6480,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 12:51:35.003 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 12:51:35.004 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 12:51:35.004 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 12:51:35.008 -06:00 [DBG] Start authorize callback request
+2018-07-17 12:51:35.011 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:51:35.011 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:51:35.011 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:51:35.011 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:51:35.011 -06:00 [DBG] No PKCE used.
+2018-07-17 12:51:35.011 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:51:35.011 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHejXbXRPbq8yrhkb0U-7P7MmRgWV2X6h4PcYxwvT99Isz46gWLRZiyXyQfCbf5GC42V1ck6fww1L7ccv1PDDCrBMhVKTxAfRJHZw7g5Ar4GQusMowD9geSY58hkbKAMJ7DLDHivQz-rdnzzpK-YSVkbDkSlCEBr3Ydl97kq1j3vk7RIcnAg-jr_UIN6MKowr6d-kpD5p1YOpzLBS2EYtAL0FpmhIx_z1UrzkG7eHrApQ5PfmkpHXFsQHryhX2uraXIaFgUDFEv5YgzIBT8G0mfnvR_8CAuKWi_INSp-23NhHQ",
+  "Nonce": "636674502715317110.YWEwOGNiZjItODc0OC00Y2I0LWI1NWYtYWY5ODY0OWRkMTUyNTMyY2VhMTctNDUwOC00NjllLWFjNDAtOWUxYzhiNmFlODA1",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674502715317110.YWEwOGNiZjItODc0OC00Y2I0LWI1NWYtYWY5ODY0OWRkMTUyNTMyY2VhMTctNDUwOC00NjllLWFjNDAtOWUxYzhiNmFlODA1",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHejXbXRPbq8yrhkb0U-7P7MmRgWV2X6h4PcYxwvT99Isz46gWLRZiyXyQfCbf5GC42V1ck6fww1L7ccv1PDDCrBMhVKTxAfRJHZw7g5Ar4GQusMowD9geSY58hkbKAMJ7DLDHivQz-rdnzzpK-YSVkbDkSlCEBr3Ydl97kq1j3vk7RIcnAg-jr_UIN6MKowr6d-kpD5p1YOpzLBS2EYtAL0FpmhIx_z1UrzkG7eHrApQ5PfmkpHXFsQHryhX2uraXIaFgUDFEv5YgzIBT8G0mfnvR_8CAuKWi_INSp-23NhHQ",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:51:35.011 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 12:51:35.014 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:51:35.014 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:51:35.014 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:51:35.014 -06:00 [DBG] No PKCE used.
+2018-07-17 12:51:35.014 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:51:35.014 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:52:40.223 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 12:52:40.224 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 12:52:40.224 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 12:52:40.224 -06:00 [DBG] Start authorize request
+2018-07-17 12:52:40.224 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:52:40.224 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:52:40.224 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:52:40.224 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:52:40.224 -06:00 [DBG] No PKCE used.
+2018-07-17 12:52:40.224 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:52:40.225 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfowEE1UwvYnSAIJKUSpXivgvPL6mfeioXUGCAukz3lKaBeNe-mfvcsN_mPGmeFjLjK2eQiWHLGeaUggcSKSiNvY6QgE8Ukx-iyLGtzmBaa7p4gnvz-yQtDryn--7GC5QcI4pNVk7tlrUZxA_4hhgMAI6jI1EBu2KBChwVpPLWr68z0p7u7pWE3Jy4tLGoYjlCWMRuRJUWgWgul5FUD84uZSmj7gqmX7-67fu-vc7glT2LSFdJ9lit6q3faDpXcqkkVLnrTowBF26bHdHbe1D8fLZnP-mid7-Pzj9FiyIs_Pg",
+  "Nonce": "636674503602136860.M2Y1NDk5MWUtZjFjOC00NjU5LTliMzEtYTQyOTQzZWJlYzVmZmUwY2JkNDAtZWFkZS00MTc3LThiMDMtZWYxODA4N2JkZWU2",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674503602136860.M2Y1NDk5MWUtZjFjOC00NjU5LTliMzEtYTQyOTQzZWJlYzVmZmUwY2JkNDAtZWFkZS00MTc3LThiMDMtZWYxODA4N2JkZWU2",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfowEE1UwvYnSAIJKUSpXivgvPL6mfeioXUGCAukz3lKaBeNe-mfvcsN_mPGmeFjLjK2eQiWHLGeaUggcSKSiNvY6QgE8Ukx-iyLGtzmBaa7p4gnvz-yQtDryn--7GC5QcI4pNVk7tlrUZxA_4hhgMAI6jI1EBu2KBChwVpPLWr68z0p7u7pWE3Jy4tLGoYjlCWMRuRJUWgWgul5FUD84uZSmj7gqmX7-67fu-vc7glT2LSFdJ9lit6q3faDpXcqkkVLnrTowBF26bHdHbe1D8fLZnP-mid7-Pzj9FiyIs_Pg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:52:40.225 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 12:52:40.227 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:52:40.227 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:52:40.227 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:52:40.227 -06:00 [DBG] No PKCE used.
+2018-07-17 12:52:40.227 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:52:40.227 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:52:40.750 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:52:40.750 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:52:40.750 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:52:40.750 -06:00 [DBG] No PKCE used.
+2018-07-17 12:52:40.750 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:52:40.750 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:52:57.264 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 12:52:57.282 -06:00 [WRN] Invalid password for user 9d29bf33-e0e5-4b21-8611-d11ee6f82ab5.
+2018-07-17 12:52:57.282 -06:00 [WRN] User 9d29bf33-e0e5-4b21-8611-d11ee6f82ab5 failed to provide the correct password.
+2018-07-17 12:52:57.431 -06:00 [INF] {
+  "Name": "User Login Failure",
+  "Category": "Authentication",
+  "EventType": "Failure",
+  "Id": 1001,
+  "Username": "bob",
+  "Endpoint": "UI",
+  "Message": "invalid credentials",
+  "ActivityId": "0HLFC2P1NNKJE:00000008",
+  "TimeStamp": "2018-07-17T18:52:57Z",
+  "ProcessId": 6480,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 12:52:57.433 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:52:57.434 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:52:57.434 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:52:57.434 -06:00 [DBG] No PKCE used.
+2018-07-17 12:52:57.434 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:52:57.434 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:53:11.124 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 12:53:11.146 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 12:53:11.146 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 12:53:11.146 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 12:53:11.147 -06:00 [DBG] Adding auth_time claim with value: 1531853591
+2018-07-17 12:53:11.147 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 12:53:11.147 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC2P1NNKJE:00000009",
+  "TimeStamp": "2018-07-17T18:53:11Z",
+  "ProcessId": 6480,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 12:53:11.150 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 12:53:11.150 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 12:53:11.150 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 12:53:11.150 -06:00 [DBG] Start authorize callback request
+2018-07-17 12:53:11.151 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:53:11.151 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:53:11.151 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:53:11.151 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:53:11.151 -06:00 [DBG] No PKCE used.
+2018-07-17 12:53:11.151 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:53:11.151 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfowEE1UwvYnSAIJKUSpXivgvPL6mfeioXUGCAukz3lKaBeNe-mfvcsN_mPGmeFjLjK2eQiWHLGeaUggcSKSiNvY6QgE8Ukx-iyLGtzmBaa7p4gnvz-yQtDryn--7GC5QcI4pNVk7tlrUZxA_4hhgMAI6jI1EBu2KBChwVpPLWr68z0p7u7pWE3Jy4tLGoYjlCWMRuRJUWgWgul5FUD84uZSmj7gqmX7-67fu-vc7glT2LSFdJ9lit6q3faDpXcqkkVLnrTowBF26bHdHbe1D8fLZnP-mid7-Pzj9FiyIs_Pg",
+  "Nonce": "636674503602136860.M2Y1NDk5MWUtZjFjOC00NjU5LTliMzEtYTQyOTQzZWJlYzVmZmUwY2JkNDAtZWFkZS00MTc3LThiMDMtZWYxODA4N2JkZWU2",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674503602136860.M2Y1NDk5MWUtZjFjOC00NjU5LTliMzEtYTQyOTQzZWJlYzVmZmUwY2JkNDAtZWFkZS00MTc3LThiMDMtZWYxODA4N2JkZWU2",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfowEE1UwvYnSAIJKUSpXivgvPL6mfeioXUGCAukz3lKaBeNe-mfvcsN_mPGmeFjLjK2eQiWHLGeaUggcSKSiNvY6QgE8Ukx-iyLGtzmBaa7p4gnvz-yQtDryn--7GC5QcI4pNVk7tlrUZxA_4hhgMAI6jI1EBu2KBChwVpPLWr68z0p7u7pWE3Jy4tLGoYjlCWMRuRJUWgWgul5FUD84uZSmj7gqmX7-67fu-vc7glT2LSFdJ9lit6q3faDpXcqkkVLnrTowBF26bHdHbe1D8fLZnP-mid7-Pzj9FiyIs_Pg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:53:11.151 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 12:53:11.153 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:53:11.153 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:53:11.153 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:53:11.153 -06:00 [DBG] No PKCE used.
+2018-07-17 12:53:11.154 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:53:11.154 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:56:23.935 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 12:56:23.935 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 12:56:23.935 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 12:56:23.935 -06:00 [DBG] Start discovery request
+2018-07-17 12:56:24.004 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 12:56:24.005 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 12:56:24.005 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 12:56:24.005 -06:00 [DBG] Start key discovery request
+2018-07-17 12:56:24.045 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 12:56:24.045 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 12:56:24.045 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 12:56:24.045 -06:00 [DBG] Start authorize request
+2018-07-17 12:56:24.045 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:56:24.045 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:56:24.045 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:56:24.045 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:56:24.045 -06:00 [DBG] No PKCE used.
+2018-07-17 12:56:24.045 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:56:24.045 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcbKMoGzQrtWsJGwc4Q0e_URBW_2uq2BDcn3CYtE6r0EfyqegR--V0ij2vCrN3PwetuYxn2crUIwVdmgNV14aW-qzyPWRAk1JjFXfrBV1Gn5FUYX-P6orlxEZTf9sEaZ-bth--r-KE-QwwaVei2jXz_Xy0ughLS70da1ayrCxtJm5jQZVg8vTz6Eopyuhx5laJ3ei7jHs41DtXdygimPqB4v__z2ODsal3GTzZPU-9cp278ORjDlARXhJC-M0tQZAtPEbYUS0v-F6FyYeWOekd7cJ88oxjpHiokfW7QDx7InpggZpqw3XFwxWB2V2KvVo8",
+  "Nonce": "636674505840339500.NmM1MzdmNTItNTIyNy00OTUxLWE0NTQtMWRkNzY2YmVjNjYwOWFkNWNjN2QtNWQxYi00NDJlLWFkZjctYzE4ZjQ3N2UzZDgx",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674505840339500.NmM1MzdmNTItNTIyNy00OTUxLWE0NTQtMWRkNzY2YmVjNjYwOWFkNWNjN2QtNWQxYi00NDJlLWFkZjctYzE4ZjQ3N2UzZDgx",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcbKMoGzQrtWsJGwc4Q0e_URBW_2uq2BDcn3CYtE6r0EfyqegR--V0ij2vCrN3PwetuYxn2crUIwVdmgNV14aW-qzyPWRAk1JjFXfrBV1Gn5FUYX-P6orlxEZTf9sEaZ-bth--r-KE-QwwaVei2jXz_Xy0ughLS70da1ayrCxtJm5jQZVg8vTz6Eopyuhx5laJ3ei7jHs41DtXdygimPqB4v__z2ODsal3GTzZPU-9cp278ORjDlARXhJC-M0tQZAtPEbYUS0v-F6FyYeWOekd7cJ88oxjpHiokfW7QDx7InpggZpqw3XFwxWB2V2KvVo8",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:56:24.046 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 12:56:24.048 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:56:24.048 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:56:24.048 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:56:24.048 -06:00 [DBG] No PKCE used.
+2018-07-17 12:56:24.048 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:56:24.048 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:56:31.728 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 12:56:31.750 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 12:56:31.750 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 12:56:31.750 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 12:56:31.750 -06:00 [DBG] Adding auth_time claim with value: 1531853791
+2018-07-17 12:56:31.750 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 12:56:31.751 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC2P1NNKJM:00000003",
+  "TimeStamp": "2018-07-17T18:56:31Z",
+  "ProcessId": 6480,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 12:56:31.753 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 12:56:31.754 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 12:56:31.754 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 12:56:31.754 -06:00 [DBG] Start authorize callback request
+2018-07-17 12:56:31.754 -06:00 [DBG] No user present in authorize request
+2018-07-17 12:56:31.754 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:56:31.754 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:56:31.754 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:56:31.754 -06:00 [DBG] No PKCE used.
+2018-07-17 12:56:31.754 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:56:31.755 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcbKMoGzQrtWsJGwc4Q0e_URBW_2uq2BDcn3CYtE6r0EfyqegR--V0ij2vCrN3PwetuYxn2crUIwVdmgNV14aW-qzyPWRAk1JjFXfrBV1Gn5FUYX-P6orlxEZTf9sEaZ-bth--r-KE-QwwaVei2jXz_Xy0ughLS70da1ayrCxtJm5jQZVg8vTz6Eopyuhx5laJ3ei7jHs41DtXdygimPqB4v__z2ODsal3GTzZPU-9cp278ORjDlARXhJC-M0tQZAtPEbYUS0v-F6FyYeWOekd7cJ88oxjpHiokfW7QDx7InpggZpqw3XFwxWB2V2KvVo8",
+  "Nonce": "636674505840339500.NmM1MzdmNTItNTIyNy00OTUxLWE0NTQtMWRkNzY2YmVjNjYwOWFkNWNjN2QtNWQxYi00NDJlLWFkZjctYzE4ZjQ3N2UzZDgx",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674505840339500.NmM1MzdmNTItNTIyNy00OTUxLWE0NTQtMWRkNzY2YmVjNjYwOWFkNWNjN2QtNWQxYi00NDJlLWFkZjctYzE4ZjQ3N2UzZDgx",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcbKMoGzQrtWsJGwc4Q0e_URBW_2uq2BDcn3CYtE6r0EfyqegR--V0ij2vCrN3PwetuYxn2crUIwVdmgNV14aW-qzyPWRAk1JjFXfrBV1Gn5FUYX-P6orlxEZTf9sEaZ-bth--r-KE-QwwaVei2jXz_Xy0ughLS70da1ayrCxtJm5jQZVg8vTz6Eopyuhx5laJ3ei7jHs41DtXdygimPqB4v__z2ODsal3GTzZPU-9cp278ORjDlARXhJC-M0tQZAtPEbYUS0v-F6FyYeWOekd7cJ88oxjpHiokfW7QDx7InpggZpqw3XFwxWB2V2KvVo8",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 12:56:31.755 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 12:56:31.758 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 12:56:31.758 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 12:56:31.758 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 12:56:31.758 -06:00 [DBG] No PKCE used.
+2018-07-17 12:56:31.758 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 12:56:31.758 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:01:56.652 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 13:01:56.652 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 13:01:56.652 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 13:01:56.652 -06:00 [DBG] Start discovery request
+2018-07-17 13:01:56.715 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 13:01:56.715 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 13:01:56.715 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 13:01:56.715 -06:00 [DBG] Start key discovery request
+2018-07-17 13:01:56.743 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 13:01:56.744 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 13:01:56.744 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 13:01:56.744 -06:00 [DBG] Start authorize request
+2018-07-17 13:01:56.744 -06:00 [DBG] No user present in authorize request
+2018-07-17 13:01:56.744 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:01:56.744 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:01:56.744 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:01:56.744 -06:00 [DBG] No PKCE used.
+2018-07-17 13:01:56.744 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:01:56.744 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcU49G7YYaH5MIacuPHel3pogeCkRmaTKepx-9r26TZ8kfiCx2pvFzUjE49_a-sCP3ZVKDP5VWKSCzQqY7MIH8YErlw4s_dijTPGt7rOSclbc7j_gPA0RhJ8STU2ph7Tvfw0UguyMyQfvcpykSGUpAUrV5FhU0RVY3-KulAHXACkNdpu_XTFJVv7s2UdBA1VC7V4upzxcGt6tTpRDszrlVSYyAcogWd6OmyXauWlmafrvXNX-szrIe2YkWlTW_pFZtdFhcGSqUl4qvj0d21iXAGf6snAOG28UrEtYWGfSgLzVdHuZ_czSc_dujTQDEj8q8",
+  "Nonce": "636674509167299480.NGMzYzJmZjEtYzdiZi00YjU0LTg0NDEtNWE0N2UyNzc2NWIyY2Q1NGFiNTEtZDcwYS00OThkLTg3NTktMTAwZGVmYjAzODZh",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674509167299480.NGMzYzJmZjEtYzdiZi00YjU0LTg0NDEtNWE0N2UyNzc2NWIyY2Q1NGFiNTEtZDcwYS00OThkLTg3NTktMTAwZGVmYjAzODZh",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcU49G7YYaH5MIacuPHel3pogeCkRmaTKepx-9r26TZ8kfiCx2pvFzUjE49_a-sCP3ZVKDP5VWKSCzQqY7MIH8YErlw4s_dijTPGt7rOSclbc7j_gPA0RhJ8STU2ph7Tvfw0UguyMyQfvcpykSGUpAUrV5FhU0RVY3-KulAHXACkNdpu_XTFJVv7s2UdBA1VC7V4upzxcGt6tTpRDszrlVSYyAcogWd6OmyXauWlmafrvXNX-szrIe2YkWlTW_pFZtdFhcGSqUl4qvj0d21iXAGf6snAOG28UrEtYWGfSgLzVdHuZ_czSc_dujTQDEj8q8",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 13:01:56.744 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 13:01:56.747 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:01:56.747 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:01:56.747 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:01:56.747 -06:00 [DBG] No PKCE used.
+2018-07-17 13:01:56.747 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:01:56.747 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:02:05.788 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 13:02:05.802 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 13:02:05.802 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 13:02:05.802 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 13:02:05.803 -06:00 [DBG] Adding auth_time claim with value: 1531854125
+2018-07-17 13:02:05.803 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 13:02:05.803 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC2P1NNKJV:00000003",
+  "TimeStamp": "2018-07-17T19:02:05Z",
+  "ProcessId": 6480,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 13:02:05.805 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 13:02:05.806 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 13:02:05.806 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 13:02:05.806 -06:00 [DBG] Start authorize callback request
+2018-07-17 13:02:05.806 -06:00 [DBG] No user present in authorize request
+2018-07-17 13:02:05.806 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:02:05.806 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:02:05.806 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:02:05.806 -06:00 [DBG] No PKCE used.
+2018-07-17 13:02:05.806 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:02:05.806 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcU49G7YYaH5MIacuPHel3pogeCkRmaTKepx-9r26TZ8kfiCx2pvFzUjE49_a-sCP3ZVKDP5VWKSCzQqY7MIH8YErlw4s_dijTPGt7rOSclbc7j_gPA0RhJ8STU2ph7Tvfw0UguyMyQfvcpykSGUpAUrV5FhU0RVY3-KulAHXACkNdpu_XTFJVv7s2UdBA1VC7V4upzxcGt6tTpRDszrlVSYyAcogWd6OmyXauWlmafrvXNX-szrIe2YkWlTW_pFZtdFhcGSqUl4qvj0d21iXAGf6snAOG28UrEtYWGfSgLzVdHuZ_czSc_dujTQDEj8q8",
+  "Nonce": "636674509167299480.NGMzYzJmZjEtYzdiZi00YjU0LTg0NDEtNWE0N2UyNzc2NWIyY2Q1NGFiNTEtZDcwYS00OThkLTg3NTktMTAwZGVmYjAzODZh",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674509167299480.NGMzYzJmZjEtYzdiZi00YjU0LTg0NDEtNWE0N2UyNzc2NWIyY2Q1NGFiNTEtZDcwYS00OThkLTg3NTktMTAwZGVmYjAzODZh",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcU49G7YYaH5MIacuPHel3pogeCkRmaTKepx-9r26TZ8kfiCx2pvFzUjE49_a-sCP3ZVKDP5VWKSCzQqY7MIH8YErlw4s_dijTPGt7rOSclbc7j_gPA0RhJ8STU2ph7Tvfw0UguyMyQfvcpykSGUpAUrV5FhU0RVY3-KulAHXACkNdpu_XTFJVv7s2UdBA1VC7V4upzxcGt6tTpRDszrlVSYyAcogWd6OmyXauWlmafrvXNX-szrIe2YkWlTW_pFZtdFhcGSqUl4qvj0d21iXAGf6snAOG28UrEtYWGfSgLzVdHuZ_czSc_dujTQDEj8q8",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 13:02:05.806 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 13:02:05.809 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:02:05.809 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:02:05.809 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:02:05.809 -06:00 [DBG] No PKCE used.
+2018-07-17 13:02:05.809 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:02:05.809 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:05:30.377 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 13:05:30.378 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 13:05:30.378 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 13:05:30.378 -06:00 [DBG] Start discovery request
+2018-07-17 13:05:30.438 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 13:05:30.438 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 13:05:30.438 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 13:05:30.438 -06:00 [DBG] Start key discovery request
+2018-07-17 13:05:30.467 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 13:05:30.467 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 13:05:30.467 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 13:05:30.467 -06:00 [DBG] Start authorize request
+2018-07-17 13:05:30.468 -06:00 [DBG] No user present in authorize request
+2018-07-17 13:05:30.468 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:05:30.468 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:05:30.468 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:05:30.468 -06:00 [DBG] No PKCE used.
+2018-07-17 13:05:30.468 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:05:30.468 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHewZG2_Jwkzft0kU6AnTx2Epgkmkh5nV3a5qmQ3ddyfBMBD3UMYk7ISHzAvi9TX1lXm33n__lQFMx89BUUHD7zyiPrzkakRvH9Bw-QZbTZeUs8phJV9-Uu5_S4fHWQmIbISK0dj9NkTS4sFkVQ4OHYzvCtamGZHwBXxG68MUMiVz9cO48awY4Z4_5jAOAgfqEeE9zEAnKaIRThwCDjP2AsLoyqO5VzvoBClsubC4H4L26fCdZqut28vB6jmmgTkmZ9LOL5zQ2Omil6h7VvVbc-K6L4Xbd6IjW9Rx-kLzNhmiIRctthzVDAw9tBVEraA9N0",
+  "Nonce": "636674511304530640.ZWE2Zjg2NTctNDM4Zi00YzFjLWFiMWMtNjgzNDBjNWYyMjc5YzgzYzBlNDctNWJhNC00NDIzLWIwMzctZGI4MGE2YjViYzVj",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674511304530640.ZWE2Zjg2NTctNDM4Zi00YzFjLWFiMWMtNjgzNDBjNWYyMjc5YzgzYzBlNDctNWJhNC00NDIzLWIwMzctZGI4MGE2YjViYzVj",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHewZG2_Jwkzft0kU6AnTx2Epgkmkh5nV3a5qmQ3ddyfBMBD3UMYk7ISHzAvi9TX1lXm33n__lQFMx89BUUHD7zyiPrzkakRvH9Bw-QZbTZeUs8phJV9-Uu5_S4fHWQmIbISK0dj9NkTS4sFkVQ4OHYzvCtamGZHwBXxG68MUMiVz9cO48awY4Z4_5jAOAgfqEeE9zEAnKaIRThwCDjP2AsLoyqO5VzvoBClsubC4H4L26fCdZqut28vB6jmmgTkmZ9LOL5zQ2Omil6h7VvVbc-K6L4Xbd6IjW9Rx-kLzNhmiIRctthzVDAw9tBVEraA9N0",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 13:05:30.468 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 13:05:30.470 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:05:30.470 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:05:30.470 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:05:30.470 -06:00 [DBG] No PKCE used.
+2018-07-17 13:05:30.470 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:05:30.470 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:05:38.327 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 13:05:38.342 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 13:05:38.342 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 13:05:38.342 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 13:05:38.342 -06:00 [DBG] Adding auth_time claim with value: 1531854338
+2018-07-17 13:05:38.342 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 13:05:38.343 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC2P1NNKK2:00000003",
+  "TimeStamp": "2018-07-17T19:05:38Z",
+  "ProcessId": 6480,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 13:05:38.346 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 13:05:38.346 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 13:05:38.346 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 13:05:38.346 -06:00 [DBG] Start authorize callback request
+2018-07-17 13:05:38.346 -06:00 [DBG] No user present in authorize request
+2018-07-17 13:05:38.346 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:05:38.346 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:05:38.346 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:05:38.346 -06:00 [DBG] No PKCE used.
+2018-07-17 13:05:38.346 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:05:38.347 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHewZG2_Jwkzft0kU6AnTx2Epgkmkh5nV3a5qmQ3ddyfBMBD3UMYk7ISHzAvi9TX1lXm33n__lQFMx89BUUHD7zyiPrzkakRvH9Bw-QZbTZeUs8phJV9-Uu5_S4fHWQmIbISK0dj9NkTS4sFkVQ4OHYzvCtamGZHwBXxG68MUMiVz9cO48awY4Z4_5jAOAgfqEeE9zEAnKaIRThwCDjP2AsLoyqO5VzvoBClsubC4H4L26fCdZqut28vB6jmmgTkmZ9LOL5zQ2Omil6h7VvVbc-K6L4Xbd6IjW9Rx-kLzNhmiIRctthzVDAw9tBVEraA9N0",
+  "Nonce": "636674511304530640.ZWE2Zjg2NTctNDM4Zi00YzFjLWFiMWMtNjgzNDBjNWYyMjc5YzgzYzBlNDctNWJhNC00NDIzLWIwMzctZGI4MGE2YjViYzVj",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674511304530640.ZWE2Zjg2NTctNDM4Zi00YzFjLWFiMWMtNjgzNDBjNWYyMjc5YzgzYzBlNDctNWJhNC00NDIzLWIwMzctZGI4MGE2YjViYzVj",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHewZG2_Jwkzft0kU6AnTx2Epgkmkh5nV3a5qmQ3ddyfBMBD3UMYk7ISHzAvi9TX1lXm33n__lQFMx89BUUHD7zyiPrzkakRvH9Bw-QZbTZeUs8phJV9-Uu5_S4fHWQmIbISK0dj9NkTS4sFkVQ4OHYzvCtamGZHwBXxG68MUMiVz9cO48awY4Z4_5jAOAgfqEeE9zEAnKaIRThwCDjP2AsLoyqO5VzvoBClsubC4H4L26fCdZqut28vB6jmmgTkmZ9LOL5zQ2Omil6h7VvVbc-K6L4Xbd6IjW9Rx-kLzNhmiIRctthzVDAw9tBVEraA9N0",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 13:05:38.347 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 13:05:38.349 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:05:38.349 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:05:38.349 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:05:38.349 -06:00 [DBG] No PKCE used.
+2018-07-17 13:05:38.349 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:05:38.349 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:07:20.102 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 13:07:20.102 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 13:07:20.102 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 13:07:20.102 -06:00 [DBG] Start authorize request
+2018-07-17 13:07:20.102 -06:00 [DBG] No user present in authorize request
+2018-07-17 13:07:20.102 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:07:20.102 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:07:20.102 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:07:20.102 -06:00 [DBG] No PKCE used.
+2018-07-17 13:07:20.102 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:07:20.102 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfN9SY11uyHUiG-DaoRZpI0c_YolIC5VT0b-7nrYLoa4YemtYUpSBveoVrQZcMTMc7mO55CVNV_PIMj0rshMgVt47kSeduVhJMRKI18Y8lrdJjJFdpCeMyUMoaEXfBiE0EKXxj9-2uLreOSglx3TdGHS91PMbInxUg_uh-wTlahiixQaCQ-vWL8Muv7FSKLpnbtsD4T-5lZN7UJCGeEhLjO90Mzuitzdmlw65HGh1Pw_gMSf7JP94H1Kb5AWBvrNJRNwztFulAiX_R3qo6iuMWiwpOoHk_9J2EbxcmQLzvGIgAVuyHFN42YqtNb-NdGAIg",
+  "Nonce": "636674512400985890.NTk4MmY5NDctYTFlZi00OGU3LTkyM2UtMDk2NDgyOGQ5YTY3OWY1M2RhOTktNDc1NC00OGU1LTgzMTktM2UzZDcxYjFmNTNi",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674512400985890.NTk4MmY5NDctYTFlZi00OGU3LTkyM2UtMDk2NDgyOGQ5YTY3OWY1M2RhOTktNDc1NC00OGU1LTgzMTktM2UzZDcxYjFmNTNi",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfN9SY11uyHUiG-DaoRZpI0c_YolIC5VT0b-7nrYLoa4YemtYUpSBveoVrQZcMTMc7mO55CVNV_PIMj0rshMgVt47kSeduVhJMRKI18Y8lrdJjJFdpCeMyUMoaEXfBiE0EKXxj9-2uLreOSglx3TdGHS91PMbInxUg_uh-wTlahiixQaCQ-vWL8Muv7FSKLpnbtsD4T-5lZN7UJCGeEhLjO90Mzuitzdmlw65HGh1Pw_gMSf7JP94H1Kb5AWBvrNJRNwztFulAiX_R3qo6iuMWiwpOoHk_9J2EbxcmQLzvGIgAVuyHFN42YqtNb-NdGAIg",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 13:07:20.102 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 13:07:20.105 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:07:20.105 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:07:20.105 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:07:20.105 -06:00 [DBG] No PKCE used.
+2018-07-17 13:07:20.105 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:07:20.105 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:14:03.930 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-17 13:14:03.961 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 13:14:03.963 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 13:14:03.964 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 13:14:03.964 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 13:14:03.964 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 13:15:15.476 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 13:15:15.592 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 13:15:15.593 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 13:15:15.595 -06:00 [DBG] Start discovery request
+2018-07-17 13:15:15.775 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 13:15:15.775 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 13:15:15.776 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 13:15:15.779 -06:00 [DBG] Start key discovery request
+2018-07-17 13:15:15.846 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 13:15:15.849 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 13:15:15.849 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 13:15:15.852 -06:00 [DBG] Start authorize request
+2018-07-17 13:15:15.869 -06:00 [DBG] No user present in authorize request
+2018-07-17 13:15:15.873 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:15:15.886 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:15:15.891 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:15:15.892 -06:00 [DBG] No PKCE used.
+2018-07-17 13:15:15.918 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:15:15.928 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeg26Co8YIkdog1k_4jlWc-Ng4cCMEHtpd9nUGZ3_rc5qr5IV4t6C5tj5ZjLuDoS875_TOPN2UZVeWSyMvpweY60td7fqpabiMMHlWL1GauEil2khwxDEOrdz8B9ZHTBuXOdaRJUixi0CWnCGzob2mtrAmX7m01i5mRJ5uNXGI0bNv3r1uhzZF_7WJ6HtUWNQCXitdGQvWdLKkFIc2lpyLdq2S3SdCKuoqFPaJlC6E_uqRgxLTHhdOG5IUmsctgvJVg37sOhLZDct2LhPZX6t35g_WKiOi4sUK1eQGx4OfuCLhM0bbF3gJhpFGtiWTuWsA",
+  "Nonce": "636674517158162790.ODE0Y2Q0MjYtMGY5ZC00MDFmLWI3ZmEtOWY1OWNkNDllZGE4NzRiNzU4YTMtNmUzNy00NzQyLTkyNWYtZGM0Y2FiOWYyOThk",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674517158162790.ODE0Y2Q0MjYtMGY5ZC00MDFmLWI3ZmEtOWY1OWNkNDllZGE4NzRiNzU4YTMtNmUzNy00NzQyLTkyNWYtZGM0Y2FiOWYyOThk",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeg26Co8YIkdog1k_4jlWc-Ng4cCMEHtpd9nUGZ3_rc5qr5IV4t6C5tj5ZjLuDoS875_TOPN2UZVeWSyMvpweY60td7fqpabiMMHlWL1GauEil2khwxDEOrdz8B9ZHTBuXOdaRJUixi0CWnCGzob2mtrAmX7m01i5mRJ5uNXGI0bNv3r1uhzZF_7WJ6HtUWNQCXitdGQvWdLKkFIc2lpyLdq2S3SdCKuoqFPaJlC6E_uqRgxLTHhdOG5IUmsctgvJVg37sOhLZDct2LhPZX6t35g_WKiOi4sUK1eQGx4OfuCLhM0bbF3gJhpFGtiWTuWsA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 13:15:15.934 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 13:15:16.236 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:15:16.237 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:15:16.237 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:15:16.237 -06:00 [DBG] No PKCE used.
+2018-07-17 13:15:16.237 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:15:16.239 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:15:44.439 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 13:15:45.598 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 13:15:45.599 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 13:15:45.600 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 13:15:45.600 -06:00 [DBG] Adding auth_time claim with value: 1531854945
+2018-07-17 13:15:45.640 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 13:15:45.667 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "124135d0-f696-44d3-a52f-f8f329ca140d",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC36G704FM:00000003",
+  "TimeStamp": "2018-07-17T19:15:45Z",
+  "ProcessId": 8149,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 13:15:45.675 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 13:15:45.676 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 13:15:45.676 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 13:15:45.680 -06:00 [DBG] Start authorize callback request
+2018-07-17 13:15:45.684 -06:00 [DBG] No user present in authorize request
+2018-07-17 13:15:45.684 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:15:45.684 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:15:45.684 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:15:45.684 -06:00 [DBG] No PKCE used.
+2018-07-17 13:15:45.684 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:15:45.684 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeg26Co8YIkdog1k_4jlWc-Ng4cCMEHtpd9nUGZ3_rc5qr5IV4t6C5tj5ZjLuDoS875_TOPN2UZVeWSyMvpweY60td7fqpabiMMHlWL1GauEil2khwxDEOrdz8B9ZHTBuXOdaRJUixi0CWnCGzob2mtrAmX7m01i5mRJ5uNXGI0bNv3r1uhzZF_7WJ6HtUWNQCXitdGQvWdLKkFIc2lpyLdq2S3SdCKuoqFPaJlC6E_uqRgxLTHhdOG5IUmsctgvJVg37sOhLZDct2LhPZX6t35g_WKiOi4sUK1eQGx4OfuCLhM0bbF3gJhpFGtiWTuWsA",
+  "Nonce": "636674517158162790.ODE0Y2Q0MjYtMGY5ZC00MDFmLWI3ZmEtOWY1OWNkNDllZGE4NzRiNzU4YTMtNmUzNy00NzQyLTkyNWYtZGM0Y2FiOWYyOThk",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674517158162790.ODE0Y2Q0MjYtMGY5ZC00MDFmLWI3ZmEtOWY1OWNkNDllZGE4NzRiNzU4YTMtNmUzNy00NzQyLTkyNWYtZGM0Y2FiOWYyOThk",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeg26Co8YIkdog1k_4jlWc-Ng4cCMEHtpd9nUGZ3_rc5qr5IV4t6C5tj5ZjLuDoS875_TOPN2UZVeWSyMvpweY60td7fqpabiMMHlWL1GauEil2khwxDEOrdz8B9ZHTBuXOdaRJUixi0CWnCGzob2mtrAmX7m01i5mRJ5uNXGI0bNv3r1uhzZF_7WJ6HtUWNQCXitdGQvWdLKkFIc2lpyLdq2S3SdCKuoqFPaJlC6E_uqRgxLTHhdOG5IUmsctgvJVg37sOhLZDct2LhPZX6t35g_WKiOi4sUK1eQGx4OfuCLhM0bbF3gJhpFGtiWTuWsA",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 13:15:45.684 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 13:15:45.688 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 13:15:45.688 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 13:15:45.688 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 13:15:45.688 -06:00 [DBG] No PKCE used.
+2018-07-17 13:15:45.688 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 13:15:45.689 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:03:25.170 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:03:25.170 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:03:25.170 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:03:25.170 -06:00 [DBG] Start authorize request
+2018-07-17 15:03:25.171 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:03:25.171 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:03:25.171 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:03:25.171 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:03:25.171 -06:00 [DBG] No PKCE used.
+2018-07-17 15:03:25.171 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:03:25.171 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdWayI1JU12sM603mEdqGN-sQGqozkUKeT1sP8NNsfQXsTb0Hwuma_X0A1EzLGob60uu7x1oqDd4vdy54X4QWJw9epgQc9QXloqU9Seo7gB-Nn8nX3ufyGmrnb92y7-ULD1opSPg8jaBLowsgKE-lF7sszYmUcQTD87gsF4u69atWnQ8ADNePzEyTENAWLcNgckeJ4DpG_lSDPnFjFVItPaykkMlH4_EQwh5wvDZhCCLUj9hFzrg2rhguufJUYoHtPvAB6wJ2-FlwUNsSEjH7rhyon6YxW6sLdSMSsaGeXJb7sap6AiUY3TuZvbsCv3gEE",
+  "Nonce": "636674582051663110.Y2NkZTg4ODMtZDc3ZC00ZmMwLWI1MGMtMjdkMDllY2M3NTkyM2JmYmI5YjItNTJlMC00OTcyLWI3MTgtNWM4YWRmM2M0MWMz",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674582051663110.Y2NkZTg4ODMtZDc3ZC00ZmMwLWI1MGMtMjdkMDllY2M3NTkyM2JmYmI5YjItNTJlMC00OTcyLWI3MTgtNWM4YWRmM2M0MWMz",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdWayI1JU12sM603mEdqGN-sQGqozkUKeT1sP8NNsfQXsTb0Hwuma_X0A1EzLGob60uu7x1oqDd4vdy54X4QWJw9epgQc9QXloqU9Seo7gB-Nn8nX3ufyGmrnb92y7-ULD1opSPg8jaBLowsgKE-lF7sszYmUcQTD87gsF4u69atWnQ8ADNePzEyTENAWLcNgckeJ4DpG_lSDPnFjFVItPaykkMlH4_EQwh5wvDZhCCLUj9hFzrg2rhguufJUYoHtPvAB6wJ2-FlwUNsSEjH7rhyon6YxW6sLdSMSsaGeXJb7sap6AiUY3TuZvbsCv3gEE",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:03:25.171 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:03:25.174 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:03:25.174 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:03:25.174 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:03:25.174 -06:00 [DBG] No PKCE used.
+2018-07-17 15:03:25.174 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:03:25.174 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:03:35.002 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:03:35.022 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:03:35.022 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:03:35.022 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:03:35.022 -06:00 [DBG] Adding auth_time claim with value: 1531861415
+2018-07-17 15:03:35.023 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:03:35.023 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "124135d0-f696-44d3-a52f-f8f329ca140d",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC36G704FP:00000003",
+  "TimeStamp": "2018-07-17T21:03:35Z",
+  "ProcessId": 8149,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:03:35.026 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:03:35.026 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:03:35.026 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:03:35.026 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:03:35.026 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:03:35.026 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:03:35.026 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:03:35.026 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:03:35.026 -06:00 [DBG] No PKCE used.
+2018-07-17 15:03:35.027 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:03:35.027 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdWayI1JU12sM603mEdqGN-sQGqozkUKeT1sP8NNsfQXsTb0Hwuma_X0A1EzLGob60uu7x1oqDd4vdy54X4QWJw9epgQc9QXloqU9Seo7gB-Nn8nX3ufyGmrnb92y7-ULD1opSPg8jaBLowsgKE-lF7sszYmUcQTD87gsF4u69atWnQ8ADNePzEyTENAWLcNgckeJ4DpG_lSDPnFjFVItPaykkMlH4_EQwh5wvDZhCCLUj9hFzrg2rhguufJUYoHtPvAB6wJ2-FlwUNsSEjH7rhyon6YxW6sLdSMSsaGeXJb7sap6AiUY3TuZvbsCv3gEE",
+  "Nonce": "636674582051663110.Y2NkZTg4ODMtZDc3ZC00ZmMwLWI1MGMtMjdkMDllY2M3NTkyM2JmYmI5YjItNTJlMC00OTcyLWI3MTgtNWM4YWRmM2M0MWMz",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674582051663110.Y2NkZTg4ODMtZDc3ZC00ZmMwLWI1MGMtMjdkMDllY2M3NTkyM2JmYmI5YjItNTJlMC00OTcyLWI3MTgtNWM4YWRmM2M0MWMz",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdWayI1JU12sM603mEdqGN-sQGqozkUKeT1sP8NNsfQXsTb0Hwuma_X0A1EzLGob60uu7x1oqDd4vdy54X4QWJw9epgQc9QXloqU9Seo7gB-Nn8nX3ufyGmrnb92y7-ULD1opSPg8jaBLowsgKE-lF7sszYmUcQTD87gsF4u69atWnQ8ADNePzEyTENAWLcNgckeJ4DpG_lSDPnFjFVItPaykkMlH4_EQwh5wvDZhCCLUj9hFzrg2rhguufJUYoHtPvAB6wJ2-FlwUNsSEjH7rhyon6YxW6sLdSMSsaGeXJb7sap6AiUY3TuZvbsCv3gEE",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:03:35.027 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:03:35.030 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:03:35.030 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:03:35.030 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:03:35.030 -06:00 [DBG] No PKCE used.
+2018-07-17 15:03:35.031 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:03:35.031 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:05:46.899 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:05:46.900 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:05:46.900 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:05:46.900 -06:00 [DBG] Start authorize request
+2018-07-17 15:05:46.900 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:05:46.900 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:05:46.900 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:05:46.900 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:05:46.900 -06:00 [DBG] No PKCE used.
+2018-07-17 15:05:46.900 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:05:46.900 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcKfoUWX8FNi9Rblq1YjQsw0xBTq9GWxNzWrcMHeVWVKlhpEZvPakctrxzOyGwBRvaHETP3aPuLy8dIGct13MWU__eohs928y3l48JGyRLGRMRHQpYv1rWxWZFpdliaTCFE9p7cCJo0BmQ-Bmtg9ekSIbF-H9dOhIjs_PlPNrU8FOBIRQF53WV_aTqYeEm3WRLy8nxg3RTkTWxuHrM4oZWFksji2XMYTOW9pmJTYsmz08Yc0oQhwC9xWSfALu0obCERXkA3ooaAk9lExQnURX-yodjoVYsMeYyq3susTdD1w12UBtpizLNpF0T3uqzc278",
+  "Nonce": "636674583468960270.Njk3NDRhYzgtZWYzNy00NTNkLWFmNjctMjAxMzlhM2VmYWZjMGUyYWVmNTktMzhkZS00Y2RlLTliZGYtMGIwMDQyOTYwY2M0",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674583468960270.Njk3NDRhYzgtZWYzNy00NTNkLWFmNjctMjAxMzlhM2VmYWZjMGUyYWVmNTktMzhkZS00Y2RlLTliZGYtMGIwMDQyOTYwY2M0",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcKfoUWX8FNi9Rblq1YjQsw0xBTq9GWxNzWrcMHeVWVKlhpEZvPakctrxzOyGwBRvaHETP3aPuLy8dIGct13MWU__eohs928y3l48JGyRLGRMRHQpYv1rWxWZFpdliaTCFE9p7cCJo0BmQ-Bmtg9ekSIbF-H9dOhIjs_PlPNrU8FOBIRQF53WV_aTqYeEm3WRLy8nxg3RTkTWxuHrM4oZWFksji2XMYTOW9pmJTYsmz08Yc0oQhwC9xWSfALu0obCERXkA3ooaAk9lExQnURX-yodjoVYsMeYyq3susTdD1w12UBtpizLNpF0T3uqzc278",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:05:46.900 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:05:46.930 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:05:46.930 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:05:46.931 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:05:46.931 -06:00 [DBG] No PKCE used.
+2018-07-17 15:05:46.931 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:05:46.931 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:05:57.080 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:05:57.097 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:05:57.097 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:05:57.097 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:05:57.098 -06:00 [DBG] Adding auth_time claim with value: 1531861557
+2018-07-17 15:05:57.098 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:05:57.098 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "124135d0-f696-44d3-a52f-f8f329ca140d",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC36G704FT:00000003",
+  "TimeStamp": "2018-07-17T21:05:57Z",
+  "ProcessId": 8149,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:05:57.101 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:05:57.101 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:05:57.101 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:05:57.101 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:05:57.101 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:05:57.101 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:05:57.101 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:05:57.101 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:05:57.101 -06:00 [DBG] No PKCE used.
+2018-07-17 15:05:57.101 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:05:57.102 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcKfoUWX8FNi9Rblq1YjQsw0xBTq9GWxNzWrcMHeVWVKlhpEZvPakctrxzOyGwBRvaHETP3aPuLy8dIGct13MWU__eohs928y3l48JGyRLGRMRHQpYv1rWxWZFpdliaTCFE9p7cCJo0BmQ-Bmtg9ekSIbF-H9dOhIjs_PlPNrU8FOBIRQF53WV_aTqYeEm3WRLy8nxg3RTkTWxuHrM4oZWFksji2XMYTOW9pmJTYsmz08Yc0oQhwC9xWSfALu0obCERXkA3ooaAk9lExQnURX-yodjoVYsMeYyq3susTdD1w12UBtpizLNpF0T3uqzc278",
+  "Nonce": "636674583468960270.Njk3NDRhYzgtZWYzNy00NTNkLWFmNjctMjAxMzlhM2VmYWZjMGUyYWVmNTktMzhkZS00Y2RlLTliZGYtMGIwMDQyOTYwY2M0",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674583468960270.Njk3NDRhYzgtZWYzNy00NTNkLWFmNjctMjAxMzlhM2VmYWZjMGUyYWVmNTktMzhkZS00Y2RlLTliZGYtMGIwMDQyOTYwY2M0",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcKfoUWX8FNi9Rblq1YjQsw0xBTq9GWxNzWrcMHeVWVKlhpEZvPakctrxzOyGwBRvaHETP3aPuLy8dIGct13MWU__eohs928y3l48JGyRLGRMRHQpYv1rWxWZFpdliaTCFE9p7cCJo0BmQ-Bmtg9ekSIbF-H9dOhIjs_PlPNrU8FOBIRQF53WV_aTqYeEm3WRLy8nxg3RTkTWxuHrM4oZWFksji2XMYTOW9pmJTYsmz08Yc0oQhwC9xWSfALu0obCERXkA3ooaAk9lExQnURX-yodjoVYsMeYyq3susTdD1w12UBtpizLNpF0T3uqzc278",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:05:57.102 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:05:57.104 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:05:57.104 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:05:57.104 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:05:57.104 -06:00 [DBG] No PKCE used.
+2018-07-17 15:05:57.104 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:05:57.104 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:09:49.080 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:09:49.083 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:09:49.084 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:09:49.084 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:09:49.084 -06:00 [DBG] No PKCE used.
+2018-07-17 15:09:49.084 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:09:49.084 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:09:58.217 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:09:58.231 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:09:58.231 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:09:58.231 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:09:58.232 -06:00 [DBG] Adding auth_time claim with value: 1531861798
+2018-07-17 15:09:58.232 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:09:58.232 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "124135d0-f696-44d3-a52f-f8f329ca140d",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC36G704G0:00000002",
+  "TimeStamp": "2018-07-17T21:09:58Z",
+  "ProcessId": 8149,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:09:58.234 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:09:58.235 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:09:58.235 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:09:58.235 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:09:58.235 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:09:58.235 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:09:58.235 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:09:58.235 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:09:58.235 -06:00 [DBG] No PKCE used.
+2018-07-17 15:09:58.235 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:09:58.235 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "http://localhost:5000/signin-oidc",
+  "AllowedRedirectUris": [
+    "http://localhost:5000/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcKfoUWX8FNi9Rblq1YjQsw0xBTq9GWxNzWrcMHeVWVKlhpEZvPakctrxzOyGwBRvaHETP3aPuLy8dIGct13MWU__eohs928y3l48JGyRLGRMRHQpYv1rWxWZFpdliaTCFE9p7cCJo0BmQ-Bmtg9ekSIbF-H9dOhIjs_PlPNrU8FOBIRQF53WV_aTqYeEm3WRLy8nxg3RTkTWxuHrM4oZWFksji2XMYTOW9pmJTYsmz08Yc0oQhwC9xWSfALu0obCERXkA3ooaAk9lExQnURX-yodjoVYsMeYyq3susTdD1w12UBtpizLNpF0T3uqzc278",
+  "Nonce": "636674583468960270.Njk3NDRhYzgtZWYzNy00NTNkLWFmNjctMjAxMzlhM2VmYWZjMGUyYWVmNTktMzhkZS00Y2RlLTliZGYtMGIwMDQyOTYwY2M0",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "http://localhost:5000/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674583468960270.Njk3NDRhYzgtZWYzNy00NTNkLWFmNjctMjAxMzlhM2VmYWZjMGUyYWVmNTktMzhkZS00Y2RlLTliZGYtMGIwMDQyOTYwY2M0",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcKfoUWX8FNi9Rblq1YjQsw0xBTq9GWxNzWrcMHeVWVKlhpEZvPakctrxzOyGwBRvaHETP3aPuLy8dIGct13MWU__eohs928y3l48JGyRLGRMRHQpYv1rWxWZFpdliaTCFE9p7cCJo0BmQ-Bmtg9ekSIbF-H9dOhIjs_PlPNrU8FOBIRQF53WV_aTqYeEm3WRLy8nxg3RTkTWxuHrM4oZWFksji2XMYTOW9pmJTYsmz08Yc0oQhwC9xWSfALu0obCERXkA3ooaAk9lExQnURX-yodjoVYsMeYyq3susTdD1w12UBtpizLNpF0T3uqzc278",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:09:58.235 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:09:58.238 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:09:58.238 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:09:58.238 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:09:58.238 -06:00 [DBG] No PKCE used.
+2018-07-17 15:09:58.238 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:09:58.238 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:15:31.467 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-17 15:15:31.499 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 15:15:31.502 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 15:15:31.502 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 15:15:31.502 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 15:15:31.502 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 15:15:52.655 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 15:15:52.768 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 15:15:52.769 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 15:15:52.771 -06:00 [DBG] Start discovery request
+2018-07-17 15:15:52.940 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 15:15:52.941 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 15:15:52.941 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 15:15:52.944 -06:00 [DBG] Start key discovery request
+2018-07-17 15:15:53.002 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:15:53.005 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:15:53.005 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:15:53.008 -06:00 [DBG] Start authorize request
+2018-07-17 15:15:53.023 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:15:53.026 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:15:53.035 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:15:53.039 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:15:53.040 -06:00 [DBG] No PKCE used.
+2018-07-17 15:15:53.064 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:15:53.075 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHd3qNrC56-AJMLBVR2Dl_YmiemsKS6N_MjcdESwKybszgsBJqwEPwhE0EMJzv2MiGRGLNY0I_rD_sEG5fq7YkvVMGlcuZFgDEts1i96GKtE4Ozd_mIBuRY15tmXGvKPEeur9kfFt2mgQgYbrzf8mfP10erQl6bbKdh6E-xFqeRLtaHZLlErWV5RULTTz9ZeKcoLY7obm-XWMk18-XNrCJZ315qhVYbQUigiygbpOoXM4khWHWVlj0Z4qrkWvlvS6u3Ss5QStxiag0hNKfGAG5SsevU-hTHDbXHEENqcaQO997frSOEzu0Djw3ItybFhRJU",
+  "Nonce": "636674589529783340.NDc4MDgzZDgtNWI5ZS00NDAzLTk3NzctNjE5MGJlZmVhZGZhOTkwOTUyNWYtOWFiMC00MWU0LTgzMGYtNmM3NmE1MmI3ZDQw",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674589529783340.NDc4MDgzZDgtNWI5ZS00NDAzLTk3NzctNjE5MGJlZmVhZGZhOTkwOTUyNWYtOWFiMC00MWU0LTgzMGYtNmM3NmE1MmI3ZDQw",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHd3qNrC56-AJMLBVR2Dl_YmiemsKS6N_MjcdESwKybszgsBJqwEPwhE0EMJzv2MiGRGLNY0I_rD_sEG5fq7YkvVMGlcuZFgDEts1i96GKtE4Ozd_mIBuRY15tmXGvKPEeur9kfFt2mgQgYbrzf8mfP10erQl6bbKdh6E-xFqeRLtaHZLlErWV5RULTTz9ZeKcoLY7obm-XWMk18-XNrCJZ315qhVYbQUigiygbpOoXM4khWHWVlj0Z4qrkWvlvS6u3Ss5QStxiag0hNKfGAG5SsevU-hTHDbXHEENqcaQO997frSOEzu0Djw3ItybFhRJU",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:15:53.080 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:15:53.369 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:15:53.370 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:15:53.370 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:15:53.370 -06:00 [DBG] No PKCE used.
+2018-07-17 15:15:53.370 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:15:53.372 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:16:05.859 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:16:07.002 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:16:07.004 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:16:07.004 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:16:07.004 -06:00 [DBG] Adding auth_time claim with value: 1531862167
+2018-07-17 15:16:07.043 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:16:07.069 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "alice",
+  "SubjectId": "124135d0-f696-44d3-a52f-f8f329ca140d",
+  "DisplayName": "alice",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC59T2470E:00000003",
+  "TimeStamp": "2018-07-17T21:16:07Z",
+  "ProcessId": 16679,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:16:07.078 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:16:07.078 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:16:07.078 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:16:07.082 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:16:07.085 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:16:07.085 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:16:07.085 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:16:07.085 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:16:07.085 -06:00 [DBG] No PKCE used.
+2018-07-17 15:16:07.085 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:16:07.085 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHd3qNrC56-AJMLBVR2Dl_YmiemsKS6N_MjcdESwKybszgsBJqwEPwhE0EMJzv2MiGRGLNY0I_rD_sEG5fq7YkvVMGlcuZFgDEts1i96GKtE4Ozd_mIBuRY15tmXGvKPEeur9kfFt2mgQgYbrzf8mfP10erQl6bbKdh6E-xFqeRLtaHZLlErWV5RULTTz9ZeKcoLY7obm-XWMk18-XNrCJZ315qhVYbQUigiygbpOoXM4khWHWVlj0Z4qrkWvlvS6u3Ss5QStxiag0hNKfGAG5SsevU-hTHDbXHEENqcaQO997frSOEzu0Djw3ItybFhRJU",
+  "Nonce": "636674589529783340.NDc4MDgzZDgtNWI5ZS00NDAzLTk3NzctNjE5MGJlZmVhZGZhOTkwOTUyNWYtOWFiMC00MWU0LTgzMGYtNmM3NmE1MmI3ZDQw",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674589529783340.NDc4MDgzZDgtNWI5ZS00NDAzLTk3NzctNjE5MGJlZmVhZGZhOTkwOTUyNWYtOWFiMC00MWU0LTgzMGYtNmM3NmE1MmI3ZDQw",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHd3qNrC56-AJMLBVR2Dl_YmiemsKS6N_MjcdESwKybszgsBJqwEPwhE0EMJzv2MiGRGLNY0I_rD_sEG5fq7YkvVMGlcuZFgDEts1i96GKtE4Ozd_mIBuRY15tmXGvKPEeur9kfFt2mgQgYbrzf8mfP10erQl6bbKdh6E-xFqeRLtaHZLlErWV5RULTTz9ZeKcoLY7obm-XWMk18-XNrCJZ315qhVYbQUigiygbpOoXM4khWHWVlj0Z4qrkWvlvS6u3Ss5QStxiag0hNKfGAG5SsevU-hTHDbXHEENqcaQO997frSOEzu0Djw3ItybFhRJU",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:16:07.085 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:16:07.089 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:16:07.089 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:16:07.089 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:16:07.089 -06:00 [DBG] No PKCE used.
+2018-07-17 15:16:07.089 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:16:07.089 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:22:22.434 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:22:22.434 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:22:22.434 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:22:22.434 -06:00 [DBG] Start authorize request
+2018-07-17 15:22:22.434 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:22:22.434 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:22:22.434 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:22:22.434 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:22:22.434 -06:00 [DBG] No PKCE used.
+2018-07-17 15:22:22.435 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:22:22.435 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHduv4mrlzISgxES462WYiMfvdttzjBm6eTLOKyoX4XznSlTSu4_dQ5WE5kxaYKLocevn1TSZL9Ml3sW8NC9-9NG5OLobb7ctf97QDhmYjj2cCh3HWV3VYUuAbGR2EVRLZDUaJrPVv_8CiAGzoUH53dWdNFkN0eCN9mIRTgjq3G82B5gcZG5BlevkvsLC1jBChON-en2wSyw3pXICTq7rx67jcZGYdTlZlFRfs4kfsQkBkAjXNdu1FeduIunMuRUkhQ6HlgH7MsPDgGnzNBc4BhKxu89mLbku2c5wwebLLnIzF4h005UJbfvMZg4TlJCviE",
+  "Nonce": "636674593424296340.NThiODVjYjktNTZjNS00N2Y3LWFkNWUtMTE3YmYzNmNhODM2ZTA0MDA5MTEtMTFjYi00MGZhLWI4MDYtOTMzMTc0YWEzNWM5",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674593424296340.NThiODVjYjktNTZjNS00N2Y3LWFkNWUtMTE3YmYzNmNhODM2ZTA0MDA5MTEtMTFjYi00MGZhLWI4MDYtOTMzMTc0YWEzNWM5",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHduv4mrlzISgxES462WYiMfvdttzjBm6eTLOKyoX4XznSlTSu4_dQ5WE5kxaYKLocevn1TSZL9Ml3sW8NC9-9NG5OLobb7ctf97QDhmYjj2cCh3HWV3VYUuAbGR2EVRLZDUaJrPVv_8CiAGzoUH53dWdNFkN0eCN9mIRTgjq3G82B5gcZG5BlevkvsLC1jBChON-en2wSyw3pXICTq7rx67jcZGYdTlZlFRfs4kfsQkBkAjXNdu1FeduIunMuRUkhQ6HlgH7MsPDgGnzNBc4BhKxu89mLbku2c5wwebLLnIzF4h005UJbfvMZg4TlJCviE",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:22:22.435 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:22:22.454 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:22:22.455 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:22:22.455 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:22:22.455 -06:00 [DBG] No PKCE used.
+2018-07-17 15:22:22.455 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:22:22.455 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:22:34.480 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:22:34.486 -06:00 [INF] {
+  "Name": "User Login Failure",
+  "Category": "Authentication",
+  "EventType": "Failure",
+  "Id": 1001,
+  "Username": "jen@email.com",
+  "Endpoint": "UI",
+  "Message": "invalid credentials",
+  "ActivityId": "0HLFC59T2470I:00000003",
+  "TimeStamp": "2018-07-17T21:22:34Z",
+  "ProcessId": 16679,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:22:34.488 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:22:34.488 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:22:34.488 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:22:34.488 -06:00 [DBG] No PKCE used.
+2018-07-17 15:22:34.488 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:22:34.488 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:22:47.418 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:22:47.418 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:22:47.418 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:22:47.418 -06:00 [DBG] No PKCE used.
+2018-07-17 15:22:47.418 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:22:47.418 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:23:34.176 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:23:34.176 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:23:34.176 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:23:34.176 -06:00 [DBG] Start authorize request
+2018-07-17 15:23:34.176 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:23:34.176 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:23:34.176 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:23:34.176 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:23:34.176 -06:00 [DBG] No PKCE used.
+2018-07-17 15:23:34.176 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:23:34.176 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcW6vBLoxVzFQOilR4G8K8AmfQ_yg63og1J_bdBzFxG7C2mlVJ0sgbRlr7KabwZOGUqV9n5f2abIeQHSGD8DZj9C-7J5AtWIc3lS2V8JVx9PIuTrnu4QmCmFJaYBDb4iCqBHkStN3Ocj9AEikIXeXjNI1tk74rk_4uttUSmdZzMKYrkntGtDGP-DhnRA99vYbw_xpDpp11ePUnFDyhbhf-aUssM_UglAuzhNsvzEDhpLB-619qUsCLMICybM6tJNBhmeNDBFJMd9X52gR3V7afb15hiHocCsSjWZtEPyueCLL9J8jrgOqnic_SPYk9ho4Y",
+  "Nonce": "636674594141721620.OGM0NjdiYjktMzA5Zi00N2Y1LWIxNTgtMDNkZGM2MjY0ZmNlNzk1MmRjMDgtOTQ1Yi00M2JlLTg0OWEtNjY4MTFhZjBmMzM3",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674594141721620.OGM0NjdiYjktMzA5Zi00N2Y1LWIxNTgtMDNkZGM2MjY0ZmNlNzk1MmRjMDgtOTQ1Yi00M2JlLTg0OWEtNjY4MTFhZjBmMzM3",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHcW6vBLoxVzFQOilR4G8K8AmfQ_yg63og1J_bdBzFxG7C2mlVJ0sgbRlr7KabwZOGUqV9n5f2abIeQHSGD8DZj9C-7J5AtWIc3lS2V8JVx9PIuTrnu4QmCmFJaYBDb4iCqBHkStN3Ocj9AEikIXeXjNI1tk74rk_4uttUSmdZzMKYrkntGtDGP-DhnRA99vYbw_xpDpp11ePUnFDyhbhf-aUssM_UglAuzhNsvzEDhpLB-619qUsCLMICybM6tJNBhmeNDBFJMd9X52gR3V7afb15hiHocCsSjWZtEPyueCLL9J8jrgOqnic_SPYk9ho4Y",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:23:34.176 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:23:34.179 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:23:34.179 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:23:34.179 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:23:34.179 -06:00 [DBG] No PKCE used.
+2018-07-17 15:23:34.179 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:23:34.179 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:24:09.582 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:24:09.582 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:24:09.582 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:24:09.582 -06:00 [DBG] Start authorize request
+2018-07-17 15:24:09.582 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:24:09.582 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:24:09.582 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:24:09.582 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:24:09.582 -06:00 [DBG] No PKCE used.
+2018-07-17 15:24:09.582 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:24:09.582 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfFMMA1uk8tSSIw03wpgT4rha6YB2Zf7Ch8884PUDm22b1oM4A5hB2_Xbne1rGJZTS4XCM-lT_Nv8c-u_8FDuYqUcwQl4obOmOGE7I7Encvj0S9rarzbq7i2XSNm-5PZqeqyhMhiHFpjektB8_DOmq-z9XBk_qQndhugbasmmLjZwxtAJeiKwhx79iFHj4VQVr2Q6eiFO1TflYTAxn69VMGFA14VSg1y4_OCF9u8CtAhfnuzejh-ONhknbe0-QKM07reLvRk9Zls-xH4Lj_vFtEwxTaE58jjj36KpjhI9cwpH8Ig2zHR24PdE8BShNLXwE",
+  "Nonce": "636674594495771730.MTg2ZjA2ODUtNmJiOC00NTQyLWE2MmMtNTYwNjcyOGE5NzE5MDhmNzdlMjktZTVlYy00ZWJmLTkzODQtNzBkNTA5NTQ5OGRi",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674594495771730.MTg2ZjA2ODUtNmJiOC00NTQyLWE2MmMtNTYwNjcyOGE5NzE5MDhmNzdlMjktZTVlYy00ZWJmLTkzODQtNzBkNTA5NTQ5OGRi",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfFMMA1uk8tSSIw03wpgT4rha6YB2Zf7Ch8884PUDm22b1oM4A5hB2_Xbne1rGJZTS4XCM-lT_Nv8c-u_8FDuYqUcwQl4obOmOGE7I7Encvj0S9rarzbq7i2XSNm-5PZqeqyhMhiHFpjektB8_DOmq-z9XBk_qQndhugbasmmLjZwxtAJeiKwhx79iFHj4VQVr2Q6eiFO1TflYTAxn69VMGFA14VSg1y4_OCF9u8CtAhfnuzejh-ONhknbe0-QKM07reLvRk9Zls-xH4Lj_vFtEwxTaE58jjj36KpjhI9cwpH8Ig2zHR24PdE8BShNLXwE",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:24:09.582 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:24:09.585 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:24:09.585 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:24:09.585 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:24:09.585 -06:00 [DBG] No PKCE used.
+2018-07-17 15:24:09.585 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:24:09.585 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:24:22.324 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:24:22.340 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:24:22.340 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:24:22.340 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:24:22.340 -06:00 [DBG] Adding auth_time claim with value: 1531862662
+2018-07-17 15:24:22.341 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:24:22.341 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC59T2470I:00000009",
+  "TimeStamp": "2018-07-17T21:24:22Z",
+  "ProcessId": 16679,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:24:22.343 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:24:22.343 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:24:22.343 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:24:22.344 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:24:22.344 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:24:22.344 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:24:22.344 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:24:22.344 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:24:22.344 -06:00 [DBG] No PKCE used.
+2018-07-17 15:24:22.344 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:24:22.344 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfFMMA1uk8tSSIw03wpgT4rha6YB2Zf7Ch8884PUDm22b1oM4A5hB2_Xbne1rGJZTS4XCM-lT_Nv8c-u_8FDuYqUcwQl4obOmOGE7I7Encvj0S9rarzbq7i2XSNm-5PZqeqyhMhiHFpjektB8_DOmq-z9XBk_qQndhugbasmmLjZwxtAJeiKwhx79iFHj4VQVr2Q6eiFO1TflYTAxn69VMGFA14VSg1y4_OCF9u8CtAhfnuzejh-ONhknbe0-QKM07reLvRk9Zls-xH4Lj_vFtEwxTaE58jjj36KpjhI9cwpH8Ig2zHR24PdE8BShNLXwE",
+  "Nonce": "636674594495771730.MTg2ZjA2ODUtNmJiOC00NTQyLWE2MmMtNTYwNjcyOGE5NzE5MDhmNzdlMjktZTVlYy00ZWJmLTkzODQtNzBkNTA5NTQ5OGRi",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674594495771730.MTg2ZjA2ODUtNmJiOC00NTQyLWE2MmMtNTYwNjcyOGE5NzE5MDhmNzdlMjktZTVlYy00ZWJmLTkzODQtNzBkNTA5NTQ5OGRi",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfFMMA1uk8tSSIw03wpgT4rha6YB2Zf7Ch8884PUDm22b1oM4A5hB2_Xbne1rGJZTS4XCM-lT_Nv8c-u_8FDuYqUcwQl4obOmOGE7I7Encvj0S9rarzbq7i2XSNm-5PZqeqyhMhiHFpjektB8_DOmq-z9XBk_qQndhugbasmmLjZwxtAJeiKwhx79iFHj4VQVr2Q6eiFO1TflYTAxn69VMGFA14VSg1y4_OCF9u8CtAhfnuzejh-ONhknbe0-QKM07reLvRk9Zls-xH4Lj_vFtEwxTaE58jjj36KpjhI9cwpH8Ig2zHR24PdE8BShNLXwE",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:24:22.344 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:24:22.347 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:24:22.347 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:24:22.347 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:24:22.347 -06:00 [DBG] No PKCE used.
+2018-07-17 15:24:22.347 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:24:22.347 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:08.968 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:08.984 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:25:08.984 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:25:08.984 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:25:08.984 -06:00 [DBG] Adding auth_time claim with value: 1531862708
+2018-07-17 15:25:08.984 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:25:08.985 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC59T2470I:0000000C",
+  "TimeStamp": "2018-07-17T21:25:08Z",
+  "ProcessId": 16679,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:25:08.987 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:25:08.987 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:25:08.987 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:25:08.987 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:25:08.987 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:25:08.987 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:08.987 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:08.987 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:08.987 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:08.987 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:08.987 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfFMMA1uk8tSSIw03wpgT4rha6YB2Zf7Ch8884PUDm22b1oM4A5hB2_Xbne1rGJZTS4XCM-lT_Nv8c-u_8FDuYqUcwQl4obOmOGE7I7Encvj0S9rarzbq7i2XSNm-5PZqeqyhMhiHFpjektB8_DOmq-z9XBk_qQndhugbasmmLjZwxtAJeiKwhx79iFHj4VQVr2Q6eiFO1TflYTAxn69VMGFA14VSg1y4_OCF9u8CtAhfnuzejh-ONhknbe0-QKM07reLvRk9Zls-xH4Lj_vFtEwxTaE58jjj36KpjhI9cwpH8Ig2zHR24PdE8BShNLXwE",
+  "Nonce": "636674594495771730.MTg2ZjA2ODUtNmJiOC00NTQyLWE2MmMtNTYwNjcyOGE5NzE5MDhmNzdlMjktZTVlYy00ZWJmLTkzODQtNzBkNTA5NTQ5OGRi",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674594495771730.MTg2ZjA2ODUtNmJiOC00NTQyLWE2MmMtNTYwNjcyOGE5NzE5MDhmNzdlMjktZTVlYy00ZWJmLTkzODQtNzBkNTA5NTQ5OGRi",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHfFMMA1uk8tSSIw03wpgT4rha6YB2Zf7Ch8884PUDm22b1oM4A5hB2_Xbne1rGJZTS4XCM-lT_Nv8c-u_8FDuYqUcwQl4obOmOGE7I7Encvj0S9rarzbq7i2XSNm-5PZqeqyhMhiHFpjektB8_DOmq-z9XBk_qQndhugbasmmLjZwxtAJeiKwhx79iFHj4VQVr2Q6eiFO1TflYTAxn69VMGFA14VSg1y4_OCF9u8CtAhfnuzejh-ONhknbe0-QKM07reLvRk9Zls-xH4Lj_vFtEwxTaE58jjj36KpjhI9cwpH8Ig2zHR24PdE8BShNLXwE",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:25:08.987 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:25:08.990 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:08.990 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:08.990 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:08.990 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:08.990 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:08.990 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:27.557 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:25:27.557 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:25:27.557 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:25:27.557 -06:00 [DBG] Start authorize request
+2018-07-17 15:25:27.557 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:25:27.557 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:27.558 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:27.558 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:27.558 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:27.558 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:27.558 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdgQOy70ltSaifTokrXR4wj3tuo9kYzE2ya1UYh4_vSSVwmZi7HA269qAAVhvimumxzqmLE7MVq-R71G6EXbJlLjEImYfCdKvFOB6MfNll7PdBSwKTfMxUnox2b7r6qcDHpHc_KvccYgZXK4WQhlhwvkFPzCTsTfqopou68lY_D0tZ84sj6Twdq3wr6rbL02Qz4NT4zHpsZ0-CC1aMA6TaoIk5YwE5GQ9inpko2U_YWm5MM0uZB9eRX3Nn5q9dFLOAHOv7MkON65_eF2DllU3GCBcK3cQbZs1euLt-9HcZ4xYWiRDphzPbIMPo5lTBxAlM",
+  "Nonce": "636674595275524340.ZWRhY2EzZmItYmRjMC00MDc2LTg3YWEtYzcxYzliZWNiZmQ5YWEyNWZlMWUtNTljNC00ZDQwLWE3NTgtYzc3NmYxMTBiMzZj",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674595275524340.ZWRhY2EzZmItYmRjMC00MDc2LTg3YWEtYzcxYzliZWNiZmQ5YWEyNWZlMWUtNTljNC00ZDQwLWE3NTgtYzc3NmYxMTBiMzZj",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdgQOy70ltSaifTokrXR4wj3tuo9kYzE2ya1UYh4_vSSVwmZi7HA269qAAVhvimumxzqmLE7MVq-R71G6EXbJlLjEImYfCdKvFOB6MfNll7PdBSwKTfMxUnox2b7r6qcDHpHc_KvccYgZXK4WQhlhwvkFPzCTsTfqopou68lY_D0tZ84sj6Twdq3wr6rbL02Qz4NT4zHpsZ0-CC1aMA6TaoIk5YwE5GQ9inpko2U_YWm5MM0uZB9eRX3Nn5q9dFLOAHOv7MkON65_eF2DllU3GCBcK3cQbZs1euLt-9HcZ4xYWiRDphzPbIMPo5lTBxAlM",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:25:27.558 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:25:27.561 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:27.561 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:27.561 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:27.561 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:27.561 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:27.561 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.221 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:31.221 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:31.221 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.221 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:31.221 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:31.221 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:31.221 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.720 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:31.720 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:31.720 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.720 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:31.720 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:31.721 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:31.721 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.811 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:31.811 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:31.811 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.811 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:31.811 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:31.811 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:31.812 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.898 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:31.898 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:31.898 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.898 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:31.898 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:31.898 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:31.898 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.980 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:31.981 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:31.981 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:31.981 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:31.981 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:31.981 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:31.981 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:32.140 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:32.140 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:32.140 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:32.140 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:32.140 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:32.140 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:32.140 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:48.107 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:25:48.122 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:25:48.122 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:25:48.122 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:25:48.122 -06:00 [DBG] Adding auth_time claim with value: 1531862748
+2018-07-17 15:25:48.122 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:25:48.122 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC59T2470I:00000017",
+  "TimeStamp": "2018-07-17T21:25:48Z",
+  "ProcessId": 16679,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:25:48.125 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:25:48.125 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:25:48.125 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:25:48.125 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:25:48.125 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:25:48.126 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:48.126 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:48.126 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:48.126 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:48.126 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:48.126 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdgQOy70ltSaifTokrXR4wj3tuo9kYzE2ya1UYh4_vSSVwmZi7HA269qAAVhvimumxzqmLE7MVq-R71G6EXbJlLjEImYfCdKvFOB6MfNll7PdBSwKTfMxUnox2b7r6qcDHpHc_KvccYgZXK4WQhlhwvkFPzCTsTfqopou68lY_D0tZ84sj6Twdq3wr6rbL02Qz4NT4zHpsZ0-CC1aMA6TaoIk5YwE5GQ9inpko2U_YWm5MM0uZB9eRX3Nn5q9dFLOAHOv7MkON65_eF2DllU3GCBcK3cQbZs1euLt-9HcZ4xYWiRDphzPbIMPo5lTBxAlM",
+  "Nonce": "636674595275524340.ZWRhY2EzZmItYmRjMC00MDc2LTg3YWEtYzcxYzliZWNiZmQ5YWEyNWZlMWUtNTljNC00ZDQwLWE3NTgtYzc3NmYxMTBiMzZj",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674595275524340.ZWRhY2EzZmItYmRjMC00MDc2LTg3YWEtYzcxYzliZWNiZmQ5YWEyNWZlMWUtNTljNC00ZDQwLWE3NTgtYzc3NmYxMTBiMzZj",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdgQOy70ltSaifTokrXR4wj3tuo9kYzE2ya1UYh4_vSSVwmZi7HA269qAAVhvimumxzqmLE7MVq-R71G6EXbJlLjEImYfCdKvFOB6MfNll7PdBSwKTfMxUnox2b7r6qcDHpHc_KvccYgZXK4WQhlhwvkFPzCTsTfqopou68lY_D0tZ84sj6Twdq3wr6rbL02Qz4NT4zHpsZ0-CC1aMA6TaoIk5YwE5GQ9inpko2U_YWm5MM0uZB9eRX3Nn5q9dFLOAHOv7MkON65_eF2DllU3GCBcK3cQbZs1euLt-9HcZ4xYWiRDphzPbIMPo5lTBxAlM",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:25:48.126 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:25:48.129 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:25:48.129 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:25:48.129 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:25:48.129 -06:00 [DBG] No PKCE used.
+2018-07-17 15:25:48.129 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:25:48.129 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:26:18.902 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:26:18.903 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:26:18.903 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:26:18.903 -06:00 [DBG] Start authorize request
+2018-07-17 15:26:18.903 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:26:18.903 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:26:18.903 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:26:18.903 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:26:18.903 -06:00 [DBG] No PKCE used.
+2018-07-17 15:26:18.903 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:26:18.903 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdJPRk8Gd5Q_R4hmtSvv7LqX9WjEgagS_M6vxpr1pEXpOBqNNq66PuBw4tclU39U6SfWw1cWjM96_61CO4SsLOP2knILUxEV0Dh1h3qNOIcf-yxipKul-2w0d43oFUf8svKQXqV3W47uOXRN7IZ4Py_9MvEeMRSZ4-W9Tsmr4Yl6l8-7oTNurdr41ufOMK326ea1FG_9gtzaMhZ0jtWJWnvt7iN7duunNx8pSguYUHDqY7fbGXp5RgvxvAbfoqkhqwVY8FjvqlNVwlrkaOaeSYyaEzsHLYQghV7s_zJffRXe40uW0Y3J6ApVzDGadOhE2M",
+  "Nonce": "636674595788983320.NzIxMTliNjItNTZiZi00ZjVjLTkxODktZjJhN2M2ZDc3YjAwZDEyNzU1NDUtY2RjZS00YmY2LThhNjEtZGZjMDE4MjZhZTJj",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674595788983320.NzIxMTliNjItNTZiZi00ZjVjLTkxODktZjJhN2M2ZDc3YjAwZDEyNzU1NDUtY2RjZS00YmY2LThhNjEtZGZjMDE4MjZhZTJj",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHdJPRk8Gd5Q_R4hmtSvv7LqX9WjEgagS_M6vxpr1pEXpOBqNNq66PuBw4tclU39U6SfWw1cWjM96_61CO4SsLOP2knILUxEV0Dh1h3qNOIcf-yxipKul-2w0d43oFUf8svKQXqV3W47uOXRN7IZ4Py_9MvEeMRSZ4-W9Tsmr4Yl6l8-7oTNurdr41ufOMK326ea1FG_9gtzaMhZ0jtWJWnvt7iN7duunNx8pSguYUHDqY7fbGXp5RgvxvAbfoqkhqwVY8FjvqlNVwlrkaOaeSYyaEzsHLYQghV7s_zJffRXe40uW0Y3J6ApVzDGadOhE2M",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:26:18.903 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:26:18.906 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:26:18.906 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:26:18.906 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:26:18.906 -06:00 [DBG] No PKCE used.
+2018-07-17 15:26:18.906 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:26:18.906 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:30:14.452 -06:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2018-07-17 15:30:14.483 -06:00 [DBG] Using Identity.Application as default scheme for authentication
+2018-07-17 15:30:14.485 -06:00 [DBG] Using Identity.External as default scheme for sign-in
+2018-07-17 15:30:14.485 -06:00 [DBG] Using Identity.External as default scheme for sign-out
+2018-07-17 15:30:14.486 -06:00 [DBG] Using Identity.Application as default scheme for challenge
+2018-07-17 15:30:14.486 -06:00 [DBG] Using Identity.Application as default scheme for forbid
+2018-07-17 15:30:36.788 -06:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2018-07-17 15:30:36.901 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2018-07-17 15:30:36.902 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2018-07-17 15:30:36.904 -06:00 [DBG] Start discovery request
+2018-07-17 15:30:37.079 -06:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2018-07-17 15:30:37.080 -06:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2018-07-17 15:30:37.080 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2018-07-17 15:30:37.083 -06:00 [DBG] Start key discovery request
+2018-07-17 15:30:37.141 -06:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2018-07-17 15:30:37.144 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2018-07-17 15:30:37.144 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2018-07-17 15:30:37.148 -06:00 [DBG] Start authorize request
+2018-07-17 15:30:37.163 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:30:37.167 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:30:37.176 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:30:37.180 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:30:37.181 -06:00 [DBG] No PKCE used.
+2018-07-17 15:30:37.206 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:30:37.217 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeJJ_dCoef-U8RyzwjOakQO8V4P0iS3nAfo1JPyCpTGKs8OigQBK9H2eSqFj67Jf6_EtUbkTWH88D-zoVrAUjvxNIusUkNRX5sNZm1gGNZtSo7HQZTE9tQBo79fkZXYrgVO6mYB8QoGWDT7OsuK2GOLC2-HPYIFw7TQAKUzx-lOIN6ILrNDGE4LRUcSaxfDMy4MBDyBaZMZloCFNx4CV8Ap4QD6VmFHnm4bZnMl7i4n-GE0W1xeowCbBDTMvErhn-gLbbNccHzDaWPqNIJENoDH4jVL6_j6O3JPhyA0HwPHKG9gpyAZ7MdFR6AXH6J0BUM",
+  "Nonce": "636674598371169110.NzI3NWJlYmQtODcyMC00ZmJhLTljOTMtMDZmYjMzYmJlYjE2MmM5ZmY1M2MtODc3NC00OTNlLThiMTItMTRmY2QwYzIwOWYz",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674598371169110.NzI3NWJlYmQtODcyMC00ZmJhLTljOTMtMDZmYjMzYmJlYjE2MmM5ZmY1M2MtODc3NC00OTNlLThiMTItMTRmY2QwYzIwOWYz",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeJJ_dCoef-U8RyzwjOakQO8V4P0iS3nAfo1JPyCpTGKs8OigQBK9H2eSqFj67Jf6_EtUbkTWH88D-zoVrAUjvxNIusUkNRX5sNZm1gGNZtSo7HQZTE9tQBo79fkZXYrgVO6mYB8QoGWDT7OsuK2GOLC2-HPYIFw7TQAKUzx-lOIN6ILrNDGE4LRUcSaxfDMy4MBDyBaZMZloCFNx4CV8Ap4QD6VmFHnm4bZnMl7i4n-GE0W1xeowCbBDTMvErhn-gLbbNccHzDaWPqNIJENoDH4jVL6_j6O3JPhyA0HwPHKG9gpyAZ7MdFR6AXH6J0BUM",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:30:37.223 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:30:37.518 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:30:37.519 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:30:37.519 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:30:37.519 -06:00 [DBG] No PKCE used.
+2018-07-17 15:30:37.519 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:30:37.521 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:30:50.221 -06:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2018-07-17 15:30:51.370 -06:00 [DBG] Augmenting SignInContext
+2018-07-17 15:30:51.371 -06:00 [DBG] Adding idp claim with value: local
+2018-07-17 15:30:51.371 -06:00 [DBG] Adding amr claim with value: pwd
+2018-07-17 15:30:51.372 -06:00 [DBG] Adding auth_time claim with value: 1531863051
+2018-07-17 15:30:51.410 -06:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2018-07-17 15:30:51.437 -06:00 [INF] {
+  "Name": "User Login Success",
+  "Category": "Authentication",
+  "EventType": "Success",
+  "Id": 1000,
+  "Username": "bob",
+  "SubjectId": "9d29bf33-e0e5-4b21-8611-d11ee6f82ab5",
+  "DisplayName": "bob",
+  "Endpoint": "UI",
+  "ActivityId": "0HLFC5I4HR0QV:00000003",
+  "TimeStamp": "2018-07-17T21:30:51Z",
+  "ProcessId": 17756,
+  "LocalIpAddress": "::1:5004",
+  "RemoteIpAddress": "::1"
+}
+2018-07-17 15:30:51.446 -06:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2018-07-17 15:30:51.446 -06:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2018-07-17 15:30:51.446 -06:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2018-07-17 15:30:51.450 -06:00 [DBG] Start authorize callback request
+2018-07-17 15:30:51.453 -06:00 [DBG] No user present in authorize request
+2018-07-17 15:30:51.453 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:30:51.453 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:30:51.453 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:30:51.453 -06:00 [DBG] No PKCE used.
+2018-07-17 15:30:51.453 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:30:51.453 -06:00 [INF] ValidatedAuthorizeRequest
+{
+  "ClientId": "ideaBox",
+  "ClientName": "IdeaBox Client",
+  "RedirectUri": "https://localhost:5001/signin-oidc",
+  "AllowedRedirectUris": [
+    "https://localhost:5001/signin-oidc"
+  ],
+  "SubjectId": "anonymous",
+  "ResponseType": "code id_token",
+  "ResponseMode": "form_post",
+  "GrantType": "hybrid",
+  "RequestedScopes": "openid profile business",
+  "State": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeJJ_dCoef-U8RyzwjOakQO8V4P0iS3nAfo1JPyCpTGKs8OigQBK9H2eSqFj67Jf6_EtUbkTWH88D-zoVrAUjvxNIusUkNRX5sNZm1gGNZtSo7HQZTE9tQBo79fkZXYrgVO6mYB8QoGWDT7OsuK2GOLC2-HPYIFw7TQAKUzx-lOIN6ILrNDGE4LRUcSaxfDMy4MBDyBaZMZloCFNx4CV8Ap4QD6VmFHnm4bZnMl7i4n-GE0W1xeowCbBDTMvErhn-gLbbNccHzDaWPqNIJENoDH4jVL6_j6O3JPhyA0HwPHKG9gpyAZ7MdFR6AXH6J0BUM",
+  "Nonce": "636674598371169110.NzI3NWJlYmQtODcyMC00ZmJhLTljOTMtMDZmYjMzYmJlYjE2MmM5ZmY1M2MtODc3NC00OTNlLThiMTItMTRmY2QwYzIwOWYz",
+  "Raw": {
+    "client_id": "ideaBox",
+    "redirect_uri": "https://localhost:5001/signin-oidc",
+    "response_type": "code id_token",
+    "scope": "openid profile business",
+    "response_mode": "form_post",
+    "nonce": "636674598371169110.NzI3NWJlYmQtODcyMC00ZmJhLTljOTMtMDZmYjMzYmJlYjE2MmM5ZmY1M2MtODc3NC00OTNlLThiMTItMTRmY2QwYzIwOWYz",
+    "state": "CfDJ8Kr3_5r6ZoZDlk_PMxCVWHeJJ_dCoef-U8RyzwjOakQO8V4P0iS3nAfo1JPyCpTGKs8OigQBK9H2eSqFj67Jf6_EtUbkTWH88D-zoVrAUjvxNIusUkNRX5sNZm1gGNZtSo7HQZTE9tQBo79fkZXYrgVO6mYB8QoGWDT7OsuK2GOLC2-HPYIFw7TQAKUzx-lOIN6ILrNDGE4LRUcSaxfDMy4MBDyBaZMZloCFNx4CV8Ap4QD6VmFHnm4bZnMl7i4n-GE0W1xeowCbBDTMvErhn-gLbbNccHzDaWPqNIJENoDH4jVL6_j6O3JPhyA0HwPHKG9gpyAZ7MdFR6AXH6J0BUM",
+    "x-client-SKU": "ID_NETSTANDARD1_4",
+    "x-client-ver": "5.2.0.0"
+  }
+}
+2018-07-17 15:30:51.454 -06:00 [INF] Showing login: User is not authenticated
+2018-07-17 15:30:51.457 -06:00 [DBG] Start authorize request protocol validation
+2018-07-17 15:30:51.458 -06:00 [DBG] client configuration validation for client ideaBox succeeded.
+2018-07-17 15:30:51.458 -06:00 [DBG] Checking for PKCE parameters
+2018-07-17 15:30:51.458 -06:00 [DBG] No PKCE used.
+2018-07-17 15:30:51.458 -06:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2018-07-17 15:30:51.458 -06:00 [DBG] client configuration validation for client ideaBox succeeded.

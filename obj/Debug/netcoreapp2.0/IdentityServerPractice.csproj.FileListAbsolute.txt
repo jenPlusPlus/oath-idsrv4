@@ -1,0 +1,12 @@
+/Users/jenwoodson/Practice/IdentityServerPractice/bin/Debug/netcoreapp2.0/IdentityServerPractice.deps.json
+/Users/jenwoodson/Practice/IdentityServerPractice/bin/Debug/netcoreapp2.0/IdentityServerPractice.runtimeconfig.json
+/Users/jenwoodson/Practice/IdentityServerPractice/bin/Debug/netcoreapp2.0/IdentityServerPractice.runtimeconfig.dev.json
+/Users/jenwoodson/Practice/IdentityServerPractice/bin/Debug/netcoreapp2.0/IdentityServerPractice.dll
+/Users/jenwoodson/Practice/IdentityServerPractice/bin/Debug/netcoreapp2.0/IdentityServerPractice.pdb
+/Users/jenwoodson/Practice/IdentityServerPractice/obj/Debug/netcoreapp2.0/IdentityServerPractice.csprojAssemblyReference.cache
+/Users/jenwoodson/Practice/IdentityServerPractice/obj/Debug/netcoreapp2.0/IdentityServerPractice.csproj.CoreCompileInputs.cache
+/Users/jenwoodson/Practice/IdentityServerPractice/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/jenwoodson/Practice/IdentityServerPractice/obj/Debug/netcoreapp2.0/IdentityServerPractice.AssemblyInfoInputs.cache
+/Users/jenwoodson/Practice/IdentityServerPractice/obj/Debug/netcoreapp2.0/IdentityServerPractice.AssemblyInfo.cs
+/Users/jenwoodson/Practice/IdentityServerPractice/obj/Debug/netcoreapp2.0/IdentityServerPractice.dll
+/Users/jenwoodson/Practice/IdentityServerPractice/obj/Debug/netcoreapp2.0/IdentityServerPractice.pdb
