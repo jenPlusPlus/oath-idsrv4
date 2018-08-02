@@ -24,8 +24,11 @@ namespace IdentityServerPractice
                 context.Database.Migrate();
 
                 var userMgr = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+                
                 var alice = userMgr.FindByNameAsync("alice").Result;
-                if (alice == null)
+                userMgr.DeleteAsync(alice);
+                alice = null;
+               if (alice == null)
                 {
                     alice = new ApplicationUser
                     {
@@ -38,8 +41,12 @@ namespace IdentityServerPractice
                     }
 
                     result = userMgr.AddClaimsAsync(alice, new Claim[]{
-                        new Claim("business_number", "42"),
+                        new Claim("business_name", "Alice's Business"),
+                        new Claim("fav_color", "Purple"),
+                        new Claim("curr_location", "Murfreesboro"),
+                        new Claim("business", "Catering"),
                         new Claim(JwtClaimTypes.Name, "Alice Smith"),
+                        // new Claim(ClaimTypes.NameIdentifier, alice.Id),
                         new Claim(JwtClaimTypes.GivenName, "Alice"),
                         new Claim(JwtClaimTypes.FamilyName, "Smith"),
                         new Claim(JwtClaimTypes.Email, "AliceSmith@email.com"),
@@ -52,6 +59,7 @@ namespace IdentityServerPractice
                         throw new Exception(result.Errors.First().Description);
                     }
                     Console.WriteLine("alice created");
+                    Console.WriteLine(alice.Id);
                 }
                 else
                 {
@@ -59,6 +67,8 @@ namespace IdentityServerPractice
                 }
 
                 var bob = userMgr.FindByNameAsync("bob").Result;
+                userMgr.DeleteAsync(bob);
+                bob = null;
                 if (bob == null)
                 {
                     bob = new ApplicationUser
@@ -72,7 +82,10 @@ namespace IdentityServerPractice
                     }
 
                     result = userMgr.AddClaimsAsync(bob, new Claim[]{
-                        new Claim("business_number", "66"),
+                        new Claim("business_name", "Bob's Business"),
+                        new Claim("business", "Accounting"),
+                        new Claim("fav_color", "Blue"),
+                        // new Claim(ClaimTypes.NameIdentifier, bob.Id),
                         new Claim(JwtClaimTypes.Name, "Bob Smith"),
                         new Claim(JwtClaimTypes.GivenName, "Bob"),
                         new Claim(JwtClaimTypes.FamilyName, "Smith"),
@@ -80,13 +93,14 @@ namespace IdentityServerPractice
                         new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
                         new Claim(JwtClaimTypes.WebSite, "http://bob.com"),
                         new Claim(JwtClaimTypes.Address, @"{ 'street_address': 'One Hacker Way', 'locality': 'Heidelberg', 'postal_code': 69118, 'country': 'Germany' }", IdentityServer4.IdentityServerConstants.ClaimValueTypes.Json),
-                        new Claim("location", "somewhere")
+                        new Claim("curr_location", "Denver")
                     }).Result;
                     if (!result.Succeeded)
                     {
                         throw new Exception(result.Errors.First().Description);
                     }
                     Console.WriteLine("bob created");
+                    Console.WriteLine(bob.Id);
                 }
                 else
                 {
